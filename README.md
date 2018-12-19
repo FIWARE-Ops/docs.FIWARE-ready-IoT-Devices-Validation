@@ -24,7 +24,8 @@ Other step of the validation process requires to fill a template to describe how
 
 This validation process is an auto evaluation process but it is assisted by FIWARE-ready IoT Devices Program reviewers (IoTReady@lists.fiware.org) who will review your tests logs and evaluate whether your device is connecting with the public instance correctly.
 
-Once you have successfully completed the FIWARE-ready IoT Devices Program, your device will be published on: [FIWARE Marketplace]​(http://marketplace.fiware.org​).
+Once you have successfully completed the FIWARE-ready IoT Devices Program, your device will be published on 
+[FIWARE Marketplace](https://marketplace.fiware.org​).
 
 ## FIWARE IOT
 The FIWARE platform has two main components (software implementations):
