@@ -1,7 +1,5 @@
 ![FIWARE Banner](https://nexus.lab.fiware.org/content/images/fiware-logo1.png)
 
-[![Postman docs](https://documenter.getpostman.com/view/3940441/Rzfnkn2W#6955b7fa-4e9a-4bc8-b6d5-a66dc2962a80)
-
 ## About FIWARE-ready IoT device program
 Around 60 cities in Europe and Latin America belong to the Open & Agile Smart Cities (OASC) Alliance Initiative. They have agreed to operate, share and publish their smart city data by means of the FIWARE interoperability model.
 
@@ -24,9 +22,9 @@ Other step of the validation process requires to fill a template to describe how
 
 This validation process is an auto evaluation process but it is assisted by FIWARE-ready IoT Devices Program reviewers (IoTReady@lists.fiware.org) who will review your tests logs and evaluate whether your device is connecting with the public instance correctly.
 
-Once you have successfully completed the FIWARE-ready IoT Devices Program, your device will be published on: [FIWARE Marketplace]​(http://marketplace.fiware.org​).
+Once you have successfully completed the FIWARE-ready IoT Devices Program, your device will be published on [FIWARE Marketplace](http://marketplace.fiware.org​).
 
-## FIWARE IOT
+## FIWARE IoT
 The FIWARE platform has two main components (software implementations):
 + [FIWARE Context Broker](https://github.com/FIWARE-GEs/core.Orion): It is the main front-end for developers. Developers access IoT data as attributes of entities representing devices and developers may also send commands to devices by updating command-related attributes, provided they have access rights for those operations.
 + [FIWARE IoT Agents](https://github.com/Fiware/catalogue/tree/master/iot-agents). These components stays at the southbound of the FIWARE Context Broker and it is used by IoT integrators to connect devices in this scenario.
@@ -35,6 +33,8 @@ Any IoT standard or proprietary protocol can be connected to FIWARE via the IoT 
 + [Ultralight2.0/(HTTP/MQTT/AMQP)](https://github.com/FIWARE-GEs/iot-agent.UltraLight)
 + [JSON/(HTTP/MQTT/AMQP)](https://github.com/FIWARE-GEs/iot-agent.JSON)
 + [LWM2M](https://github.com/FIWARE-GEs/iot-agent.LightWeightM2M)
+
+![](https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/img/01.png)
 
 ## FIWARE public testing infrastructure
 <table border="1">
@@ -121,10 +121,10 @@ If you have any doubt regarding the information in this template, you are welcom
 
 You can go to the marketplace and select [Apply](http://marketplace.fiware.org/apply) to upload a new component to be validated. 
 It goes to the ​ web page in which you can select ‘Start a new application’. 
-![](https://fiware-ops.github.io/docs.FIWARE-Ready-IoT-Devices-Validation/img/01.png)
+![](https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/img/02.png)
 Please, keep in mind that you have to fill in several applications if you want to validate several FIWARE-ready IoT Devices. 
 This information will describe us how your hardware device communicates with FIWARE.
-![](https://fiware-ops.github.io/docs.FIWARE-Ready-IoT-Devices-Validation/img/02.png)
+![](https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/img/03.png)
 You can see that the status is Draft which means that it is not sent to the reviewers yet. 
 Additionally, you have the possibility to delete this application if it was not delivered for validation yet.
 If you click on ‘Fill’ button in the ‘Company information’ box, the form requests you to introduce the name and logo of the company, address, city, country and contact email. 
@@ -135,21 +135,22 @@ Additionally, you must provide ​files or screenshots of the responses you have
 This content should be introduced in ‘Additional documentation describing how the solution/technology uses or integrates with FIWARE’.
 
 + Submit application
+
 Once that you finish with the process to introduce the data, you can submit the data to start the validation process.
-![](https://fiware-ops.github.io/docs.FIWARE-Ready-IoT-Devices-Validation/img/03.png)
+![](https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/img/04.png)
 FIWARE-ready IoT Devices Program reviewers will evaluate the provided documentation and contact with you in case any clarification is required. The result of this evaluation will be a Test Report that will be published in the marketplace application page.
-Once the evaluation is finished, you have successfully completed the FIWARE-ready IoT Devices Program, and your device will be published on the list of FIWARE-ready IoT Devices commercial devices available at ​http://marketplace.fiware.org/​.
+Once the evaluation is finished, you have successfully completed the FIWARE-ready IoT Devices Program, and your device will be published on the list of FIWARE-ready IoT Devices commercial devices available at [FIWARE Marketplace](​http://marketplace.fiware.org)​.
 Once the product is validated you will also be able to publish in your own web the program logo and specific instructions to connect your product to FIWARE ecosystems (based on a template we will provide as well).
 
 
 ## Example
-Postman [collection](https://www.getpostman.com/collections/fe0525384f57d03afdf0) prepared for test scenario. 
+Postman [collection](https://app.getpostman.com/run-collection/fe0525384f57d03afdf0) and [documentation](https://documenter.getpostman.com/view/3940441/Rzfnkn2W#6955b7fa-4e9a-4bc8-b6d5-a66dc2962a80) prepared for test scenario. 
 It use variables, public (default) ones are in the collection. You can override them (except endpoints).
 
 In the scenarios with curl variables replaced with default values.
 
-### Check the Orion Version (Optional)
-#### :one: Request:
+### :one: Check the Orion Version (Optional)
+#### Request:
 ```console
 curl -X GET \
   'http://iot-test.lab.fiware.org:24040/version'
@@ -170,8 +171,8 @@ curl -X GET \
 }
 ```
 
-### Check the UltraLight Agent health (Optional)
-#### :two: Request:
+### :two: Check the UltraLight Agent health (Optional)
+#### Request:
 ```console
 curl -X GET \
   'http://iot-test.lab.fiware.org:24061/iot/about'
@@ -186,8 +187,8 @@ curl -X GET \
 }
 ```
 
-### Create a service (Optional)
-#### :three: Request:
+### :three: Create a service (Optional)
+#### Request:
 ```console
 curl -v -X POST \
   'http://iot-test.lab.fiware.org:24061/iot/services' \
@@ -208,9 +209,9 @@ curl -v -X POST \
 201 Created
 ```
 
-### List a service (Optional)
+### :four: List a service (Optional)
 List of services will be empty if you missed previously step (if you use default service)
-#### :four: Request:
+#### Request:
 ```console
 curl -s -X GET \
   'http://iot-test.lab.fiware.org:24061/iot/services' \
@@ -248,8 +249,8 @@ In case if you use default service:
 }
 ```
 
-### Register a device
-#### :five: Request:
+### :five: Register a device
+#### Request:
 ```console
 curl -v -X POST \
   'http://iot-test.lab.fiware.org:24061/iot/devices' \
@@ -278,8 +279,8 @@ curl -v -X POST \
 201 Created
 ```
 
-### Get a device (Optional)
-#### :six: Request:
+### :six: Get a device (Optional)
+#### Request:
 ```console
 curl -s -X GET \
   'http://iot-test.lab.fiware.org:24061/iot/devices/motion001' \
@@ -315,8 +316,8 @@ curl -s -X GET \
 }
 ```
 
-### Send the measurement
-#### :sevel: Request:
+### :seven: Send the measurement
+#### Request:
 ```console
 curl -v -X POST \
   'http://iot-test.lab.fiware.org:24051/iot/d?k=4jggokgpepnvsb2uv4s40d59ov&i=motion001' \
@@ -330,8 +331,8 @@ curl -v -X POST \
 200 OK
 ```
 
-### Read the measurement
-#### :eight: Request:
+### :eight: Read the measurement
+#### Request:
 ```console
 curl -s -X GET \
   'http://iot-test.lab.fiware.org:24040/v2/entities/urn:ngsd-ld:Motion:001' \
@@ -371,7 +372,7 @@ curl -s -X GET \
 }
 ```
 
-## Useflull links
+## Useful links
 + General [information](https://github.com/Fiware/catalogue/tree/master/iot-agents) about IoT Agents
 + Iot Tutorials:
   + [UltraLight2.0](https://fiware-iotagent-ul.readthedocs.io/en/latest/)
