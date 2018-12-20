@@ -34,7 +34,7 @@ Any IoT standard or proprietary protocol can be connected to FIWARE via the IoT 
 + [JSON/(HTTP/MQTT/AMQP)](https://github.com/FIWARE-GEs/iot-agent.JSON)
 + [LWM2M](https://github.com/FIWARE-GEs/iot-agent.LightWeightM2M)
 
-![](https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/img/01.png)
+<img src=https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/img/01.png width=500 />
 
 ## FIWARE public testing infrastructure
 <table border="1">
@@ -120,11 +120,15 @@ If you have any doubt regarding the information in this template, you are welcom
 + Fill in the information of your product into the marketplace
 
 You can go to the marketplace and select [Apply](http://marketplace.fiware.org/apply) to upload a new component to be validated. 
-It goes to the ​ web page in which you can select ‘Start a new application’. 
-![](https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/img/02.png)
+It goes to the ​ web page in which you can select ‘Start a new application’.
+
+<img src=https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/img/02.png width=500 />
+
 Please, keep in mind that you have to fill in several applications if you want to validate several FIWARE-ready IoT Devices. 
 This information will describe us how your hardware device communicates with FIWARE.
-![](https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/img/03.png)
+
+<img src=https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/img/03.png width=500 />
+
 You can see that the status is Draft which means that it is not sent to the reviewers yet. 
 Additionally, you have the possibility to delete this application if it was not delivered for validation yet.
 If you click on ‘Fill’ button in the ‘Company information’ box, the form requests you to introduce the name and logo of the company, address, city, country and contact email. 
@@ -137,7 +141,9 @@ This content should be introduced in ‘Additional documentation describing how 
 + Submit application
 
 Once that you finish with the process to introduce the data, you can submit the data to start the validation process.
-![](https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/img/04.png)
+
+<img src=https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/img/04.png width=500 />
+
 FIWARE-ready IoT Devices Program reviewers will evaluate the provided documentation and contact with you in case any clarification is required. The result of this evaluation will be a Test Report that will be published in the marketplace application page.
 Once the evaluation is finished, you have successfully completed the FIWARE-ready IoT Devices Program, and your device will be published on the list of FIWARE-ready IoT Devices commercial devices available at [FIWARE Marketplace](​http://marketplace.fiware.org)​.
 Once the product is validated you will also be able to publish in your own web the program logo and specific instructions to connect your product to FIWARE ecosystems (based on a template we will provide as well).
