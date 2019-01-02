@@ -166,44 +166,47 @@ It use variables, public (default) ones are in the collection. You can override 
 In the scenarios with curl variables replaced with default values.
 
 <h4>Check the Orion Version (Optional)</h4>
+
 Request
 ```console
-curl -X GET \
-  'http://iot-test.lab.fiware.org:24040/version'
+curl -s -X GET \
+  'http://iot-test.lab.fiware.org:24040/version' | python -m json.tool
 ```
 Response
 ```json
 {
     "orion": {
-        "version": "2.0.0",
-        "uptime": "0 d, 5 h, 8 m, 23 s",
-        "git_hash": "485128e135f4225040841f5ab3b85d42cfe68f55",
         "compile_time": "Fri Sep 28 09:56:56 UTC 2018",
         "compiled_by": "root",
         "compiled_in": "4852e5bea506",
+        "doc": "https://fiware-orion.readthedocs.org/en/2.0.0/",
+        "git_hash": "485128e135f4225040841f5ab3b85d42cfe68f55",
         "release_date": "Fri Sep 28 09:56:56 UTC 2018",
-        "doc": "https://fiware-orion.readthedocs.org/en/2.0.0/"
+        "uptime": "3 d, 15 h, 40 m, 53 s",
+        "version": "2.0.0"
     }
 }
 ```
 
 <h4>Check the UltraLight Agent health (Optional)</h4>
+
 Request
 ```console
-curl -X GET \
-  'http://iot-test.lab.fiware.org:24061/iot/about'
+curl -s -X GET \
+  'http://iot-test.lab.fiware.org:24061/iot/about' | python -m json.tool
 ```
 Response
 ```json
 {
+    "baseRoot": "/",
     "libVersion": "2.7.0",
     "port": 4061,
-    "baseRoot": "/",
     "version": "1.7.0"
 }
 ```
 
 <h4>Create a service (Optional)</h4>
+
 Request
 ```console
 curl -v -X POST \
@@ -212,13 +215,12 @@ curl -v -X POST \
   -H 'FIWARE-Service: iot' \
   -H 'FIWARE-ServicePath: /' \
   -d '{
-    "services": [{
-		"apikey": "4jggokgpepnvsb2uv4s40d59ov",
-		"cbroker": "http://orion:1026",
-		"entity_type": "Motion",
-		"resource": "/iot/d"
-	}]
-}'
+        "services": [{
+        "apikey": "4jggokgpepnvsb2uv4s40d59ov",
+        "cbroker": "http://orion:1026",
+        "entity_type": "Motion",
+        "resource": "/iot/d"}]
+     }'
 ```
 Response
 ```console
@@ -226,6 +228,7 @@ Response
 ```
 
 <h4>List a service (Optional)</h4>
+
 List of services will be empty if you missed previously step (if you use default service)
 
 Request
@@ -268,6 +271,7 @@ In case if you use default service:
 ```
 
 <h4>Register a device</h4>
+
 Request
 ```console
 curl -v -X POST \
@@ -276,20 +280,20 @@ curl -v -X POST \
   -H 'FIWARE-Service: iot' \
   -H 'FIWARE-ServicePath: /' \
   -d '{
-  "devices": [
-    {
-      "device_id": "motion001",
-      "protocol": "MQTT",
-      "entity_name": "urn:ngsd-ld:Motion:001",
-      "entity_type": "Motion",
-       "attributes": [
-         { "object_id": "c", "name": "count", "type": "int" }
-       ],
-       "static_attributes": [
-         { "name":"refStore", "type": "Relationship", "value": "urn:ngsi-ld:Store:001"}
-       ]
-    }
-  ]
+       "devices": [{
+         "device_id": "motion001",
+         "protocol": "MQTT",
+         "entity_name": "urn:ngsd-ld:Motion:001",
+         "entity_type": "Motion",
+         "attributes": [{
+         "object_id": "c",
+         "name": "count",
+         "type": "int" }],
+       "static_attributes": [{
+         "name":"refStore",
+         "type": "Relationship",
+        "value": "urn:ngsi-ld:Store:001"}]
+    }]
 }'
 ```
 Response
@@ -298,6 +302,7 @@ Response
 ```
 
 <h4>Get a device (Optional)</h4>
+
 Request
 ```console
 curl -s -X GET \
@@ -335,6 +340,7 @@ Response
 ```
 
 <h4>Send the measurement</h4>
+
 Request
 ```console
 curl -v -X POST \
@@ -350,6 +356,7 @@ Response
 ```
 
 <h4>Read the measurement</h4>
+
 Request
 ```console
 curl -s -X GET \
