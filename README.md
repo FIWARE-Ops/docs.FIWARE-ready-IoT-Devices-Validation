@@ -9,7 +9,7 @@
 [![Documentation](https://img.shields.io/readthedocs/fiware-ready-iot-devices-validation.svg)](https://fiware-ready-iot-devices-validation.rtfd.io)
 [![Build Status](https://img.shields.io/travis/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation.svg)](https://travis-ci.org/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation)
 
-This documentation describes the process to apply and validate an IoT Device as FIWARE Ready .
+This documentation describes the process to apply and validate an IoT Device as FIWARE Ready.
 
 To join FIWARE-ready IoT Devices Program, you need to follow a series of steps, including an simple validation of your
 product (implementation), where you will connect it to a FIWARE public instance and you will perform a series of tests:
@@ -45,7 +45,7 @@ of standard REST APIs to ease the development of smart applications.
 
 Thousands of companies, including large corporations, startups, SMEs and individual developers worldwide are willing to
 provide their Internet of Things (IoT) solutions to these cities, basing their solutions on FIWARE open source platform
-components.
+[components](https://github.com/fiware/catalogue).
 
 So far, developers needed to search for **compatible** IoT products and find out how to make them work. The FIWARE-ready
 IoT Devices Program provides the answer as it is designed to demonstrate the ability of the IoT solutions to

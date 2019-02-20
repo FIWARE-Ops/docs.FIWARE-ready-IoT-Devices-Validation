@@ -1,30 +1,31 @@
 [![Documentation](https://nexus.lab.fiware.org/repository/raw/public/badges/chapters/documentation.svg)](https://fiware-tutorials.rtfd.io)
 [![Support badge](https://nexus.lab.fiware.org/repository/raw/public/badges/stackoverflow/fiware.svg)](https://stackoverflow.com/questions/tagged/fiware)
 
-### About program
+### About the program
 
-Around 60 cities in Europe and Latin America belong to the Open & Agile Smart Cities (OASC) Alliance Initiative. They
-have agreed to operate, share and publish their smart city data by means of the FIWARE interoperability model.
+Over 120 cities in Europe and Latin America belong to the Open & Agile Smart Cities (OASC) Alliance Initiative. They
+have agreed to operate, share and publish their smart city data using the FIWARE interoperability model.
 
-The FIWARE ecosystem means a straightforward business opportunity for IoT products: It is simple, FIWARE IoT stack
+The FIWARE ecosystem means a straightforward business opportunity for IoT products: It is simple, the FIWARE IoT stack
 handles well-known IoT protocol standards and provides an enhanced OpenStack-based cloud environment plus a powerful set
 of standard REST APIs to ease the development of smart applications.
 
 Thousands of companies, including large corporations, startups, SMEs and individual developers worldwide are willing to
-provide their Internet of Things (IoT) solutions to these cities, basing their solutions on FIWARE open source platform
-components.
+provide their Internet of Things (IoT) solutions to these cities, basing their solutions around the FIWARE open source
+platform [components](https://github.com/fiware/catalogue).
 
-So far, developers needed to search compatible IoT products and find out how to make them work. FIWARE-ready IoT Devices
-Program provides the answer as it is designed to demonstrate the ability of the IoT solutions to seamless interoperate
-with FIWARE platforms. The database of products and developers that have successfully accomplished the FIWARE-ready IoT
-Devices Program is the catalogue of the ecosystem of IoT hardware producers and technology providers that can be
-selected by the OASC Alliance cities to build their smart city solutions.
+So far, developers needed to search for **compatible** IoT products and find out how to make them work. The FIWARE-ready
+IoT Devices Program provides the answer as it is designed to demonstrate the ability of the IoT solutions to
+interoperate seamlessly with FIWARE platforms. The database of products and developers that have successfully
+accomplished the FIWARE-ready IoT Devices Program is the catalogue of the ecosystem of IoT hardware producers and
+technology providers that can be selected by the OASC Alliance cities to build their smart city solutions.
 
-This program is providing an answer to thousands of developers.
+### How to apply
 
-To join FIWARE-ready IoT Devices Program, you need to follow some steps, including an easy validation of your product
-(implementation), where you will connect it to one of the FIWARE public instances available and you will perform the
-following tests:
+This documentation describes the process to apply and validate an IoT Device as FIWARE Ready.
+
+To join FIWARE-ready IoT Devices Program, you need to follow a series of steps, including an simple validation of your
+product (implementation), where you will connect it to a FIWARE public instance and you will perform a series of tests:
 
 -   IoT services creation (optional)
 -   Device registration
@@ -32,8 +33,8 @@ following tests:
 -   Send measurements
 -   Read measurements (optional)
 
-Other step of the validation process requires to fill a template to describe how your hardware device communicates with
-FIWARE.
+Second step of the validation process requires you to fill in a template to describe how your hardware device
+communicates with FIWARE.
 
 This validation process is an auto evaluation process but it is assisted by FIWARE-ready IoT Devices Program reviewers
 (IoTReady@lists.fiware.org) who will review your tests logs and evaluate whether your device is connecting with the
@@ -42,24 +43,45 @@ public instance correctly.
 Once you have successfully completed the FIWARE-ready IoT Devices Program, your device will be published on
 [FIWARE Marketplace](http://marketplace.fiware.org​).
 
-### IoT platform
+### FIWARE IoT platform
 
-The FIWARE platform has two main components (software implementations):
+Regarding IoT, the FIWARE platform offers two major sofware components:
 
--   [FIWARE Context Broker](https://github.com/FIWARE-GEs/core.Orion): It is the main frontend for developers.
-    Developers access IoT data as attributes of entities representing devices and developers may also send commands to
+-   [FIWARE Context Broker](https://github.com/telefonicaid/fiware-orion): It is the main access point for developers
+    using the [NGSI](https://fiware.github.io/specifications/OpenAPI/ngsiv2) Interface. Developers can retrieve the
+    current context of an IoT device as a series of attributes of an entity. Developers may also send commands to
     devices by updating command-related attributes, provided they have access rights for those operations.
--   [FIWARE IoT Agents](https://github.com/Fiware/catalogue/tree/master/iot-agents). These components stays at the
-    southbound of the FIWARE Context Broker and it is used by IoT integrators to connect devices in this scenario.
+-   [FIWARE IoT Agents](https://github.com/Fiware/catalogue/tree/master/iot-agents). These components deal with
+    southbound communications from the FIWARE Context Broker to IoT devices and also translate northbound communications
+    from the device specific protocol into NGSI commands. This allows IoT integrators to connect devices, receive
+    measurements and send commands.
+
+![](img/01.png)
 
 Any IoT standard or proprietary protocol can be connected to FIWARE via the IoT Agent components. Currently FIWARE
 provides IoT Agents for:
 
--   [Ultralight2.0/(HTTP/MQTT/AMQP)](https://github.com/FIWARE-GEs/iot-agent.UltraLight)
--   [JSON/(HTTP/MQTT/AMQP)](https://github.com/FIWARE-GEs/iot-agent.JSON)
--   [LWM2M](https://github.com/FIWARE-GEs/iot-agent.LightWeightM2M)
+-   [IoT Agent for JSON](https://github.com/telefonicaid/iotagent-json) - a bridge between HTTP/MQTT messaging (with a
+    JSON payload) and NGSI
+-   [IoT Agent for LWM2M](https://github.com/telefonicaid/lightweightm2m-iotagent) - a bridge between the
+    [Lightweight M2M](https://www.omaspecworks.org/what-is-oma-specworks/iot/lightweight-m2m-lwm2m/) protocol and NGSI
+-   [IoT Agent for Ultralight](https://github.com/telefonicaid/iotagent-ul) - a bridge between HTTP/MQTT messaging (with
+    an UltraLight2.0 payload) and NGSI
+-   [IoT Agent for LoRaWAN](https://github.com/Atos-Research-and-Innovation/IoTagent-LoRaWAN) - a bridge between the
+    [LoRaWAN](https://www.thethingsnetwork.org/docs/lorawan/) protocol and NGSI
+-   [IoT Agent for OPC-UA](https://github.com/Engineering-Research-and-Development/iotagent-opcua) - a bridge between
+    the [OPC Unified Architecture](http://www.opcua.us/) protocol and NGSI
+-   [IoT Agent for Sigfox](https://github.com/telefonicaid/sigfox-iotagent) - a bridge between the
+    [Sigfox](https://www.sigfox.com/en) protocol and NGSI
 
-<img src=https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/docs/img/01.png width=500 />
+-   The [OpenMTC](https://github.com/OpenMTC/OpenMTC) Incubated Generic Enabler brings an open source implementation of
+    the OneM2M standard. A northbound interface with the Orion Context Broker is implemented as part of the product.
+
+There is also an [IoT Agent library](https://github.com/telefonicaid/iotagent-node-lib/) for developing your own IoT
+Agent.
+
+New IoT Agents are being added over time, and the current supported set of protocols can be found within the
+[FIWARE Catalogue](https://github.com/Fiware/catalogue/tree/master/iot-agents)
 
 ### Public testing infrastructure
 
@@ -77,21 +99,21 @@ provides IoT Agents for:
 <td rowspan="2">UltraLight</td>
 <td rowspan="2">UltraLight2.0/HTTP<br />MQTT/TCP</td>
 <td>http://iot-test.lab.fiware.org:24051</td>
-<td>Southbound</td>
+<td>South Port</td>
 </tr>
 <tr>
 <td>http://iot-test.lab.fiware.org:24061</td>
-<td>Norhtbound</td>
+<td>North Port</td>
 </tr>
 <tr>
 <td rowspan="2">LightWeightM2M</td>
 <td rowspan="2">LWM2M/CoAP</td>
 <td>http://iot-test.lab.fiware.org:24052</td>
-<td>Southbound</td>
+<td>South Port</td>
 </tr>
 <tr>
 <td>http://iot-test.lab.fiware.org:24062</td>
-<td>Norhtbound</td>
+<td>North Port</td>
 </tr>
 <tr>
 <td>Orion Context Broker</td>
@@ -144,26 +166,28 @@ provides IoT Agents for:
 Please, save all the communication established with the IoT Stack software APIs during the execution of each of the
 tests (responses you get).
 
-#### Fill in the FIWARE-Ready IoT Device Manual [Template](https://docs.google.com/document/d/1g_ic6Vy5g9i04Oe-kyFf8gxvP2862IVCGH9KJIqKuYk/edit)
+#### Fill in the FIWARE-Ready IoT Device Manual Template
 
-Fill the template named ‘​FIWARE-ready IoT Device Manual Template​’. This template requires you to describe how your
-hardware device communicates with FIWARE. If any sections within the template do not make sense or not apply to your
-implementation, please explain the reason(s) in its corresponding place. This document will be the basic one used by the
-user to configure and use your components, therefore, you should describe in details how to connect the device to Orion
-Context Broker to send context information. If you have any doubt regarding the information in this template, you are
-welcome to contact FIWARE-ready IoT Devices Program reviewers (I​oTReady@lists.fiware.org​).
+Fill the template named
+‘[FIWARE-ready IoT Device Manual Template](https://docs.google.com/document/d/1g_ic6Vy5g9i04Oe-kyFf8gxvP2862IVCGH9KJIqKuYk/edit).
+This template requires you to describe how your hardware device communicates with FIWARE. If any sections within the
+template do not make sense or not apply to your implementation, please explain the reason(s) in its corresponding place.
+This document will be the basic one used by the user to configure and use your components, therefore, you should
+describe in details how to connect the device to Orion Context Broker to send context information. If you have any doubt
+regarding the information in this template, you are welcome to contact FIWARE-ready IoT Devices Program reviewers
+[IoTReady@lists.fiware.org​](mailto:I​oTReady@lists.fiware.org​).
 
 #### Fill in the information of your product into the marketplace
 
 You can go to the marketplace and select [Apply](http://marketplace.fiware.org/apply) to upload a new component to be
 validated. It goes to the ​ web page in which you can select ‘Start a new application’.
 
-<img src=https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/docs/img/02.png width=500 />
+![](img/02.png)
 
-Please, keep in mind that you have to fill in several applications if you want to validate several FIWARE-ready IoT
-Devices. This information will describe us how your hardware device communicates with FIWARE.
+If you want to validate several FIWARE-ready IoT Devices please remember to fill in multiple seaparate applications.
+This information will describe us how your hardware device communicates with FIWARE.
 
-<img src=https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/docs/img/03.png width=500 />
+![](img/03.png)
 
 You can see that the status is Draft which means that it is not sent to the reviewers yet. Additionally, you have the
 possibility to delete this application if it was not delivered for validation yet. If you click on ‘Fill’ button in the
@@ -181,7 +205,7 @@ uses or integrates with FIWARE’.
 
 Once that you finish with the process to introduce the data, you can submit the data to start the validation process.
 
-<img src=https://raw.githubusercontent.com/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation/master/docs/img/04.png width=500 />
+![](img/04.png)
 
 FIWARE-ready IoT Devices Program reviewers will evaluate the provided documentation and contact with you in case any
 clarification is required. The result of this evaluation will be a Test Report that will be published in the marketplace
@@ -194,17 +218,17 @@ template we will provide as well).
 ### Example
 
 Postman [collection](https://app.getpostman.com/run-collection/fe0525384f57d03afdf0) and
-[documentation](https://documenter.getpostman.com/view/3940441/Rzfnkn2W#6955b7fa-4e9a-4bc8-b6d5-a66dc2962a80) prepared
-for test scenario. It use variables, public (default) ones are in the collection. You can override them (except
-endpoints).
+[documentation](https://documenter.getpostman.com/view/3940441/Rzfnkn2W#6955b7fa-4e9a-4bc8-b6d5-a66dc2962a80) have been
+prepared for test scenario. The collection uses variables, public (default) ones are in the collection. You can override
+them (except endpoints).
 
 In the scenarios with curl variables replaced with default values.
 
-<h4>Check the Orion Version (Optional)</h4>
+#### Check the Orion Version (Optional)
 
 Request
 
-```console
+```bash
 curl -s -X GET \
   'http://iot-test.lab.fiware.org:24040/version' | python -m json.tool
 ```
@@ -226,11 +250,11 @@ Response
 }
 ```
 
-<h4>Check the UltraLight Agent health (Optional)</h4>
+#### Check the UltraLight Agent health (Optional)
 
 Request
 
-```console
+```bash
 curl -s -X GET \
   'http://iot-test.lab.fiware.org:24061/iot/about' | python -m json.tool
 ```
@@ -246,11 +270,11 @@ Response
 }
 ```
 
-<h4>Create a service (Optional)</h4>
+#### Create a service (Optional)
 
 Request
 
-```console
+```bash
 curl -v -X POST \
   'http://iot-test.lab.fiware.org:24061/iot/services' \
   -H 'Content-Type: application/json' \
@@ -267,17 +291,17 @@ curl -v -X POST \
 
 Response
 
-```console
+```text
 201 Created
 ```
 
-<h4>List a service (Optional)</h4>
+#### List a service (Optional)
 
 List of services will be empty if you missed previously step (if you use default service)
 
 Request
 
-```console
+```bash
 curl -s -X GET \
   'http://iot-test.lab.fiware.org:24061/iot/services' \
   -H 'FIWARE-Service: iot' \
@@ -319,11 +343,11 @@ In case if you use default service:
 }
 ```
 
-<h4>Register a device</h4>
+#### Register a device
 
 Request
 
-```console
+```bash
 curl -v -X POST \
   'http://iot-test.lab.fiware.org:24061/iot/devices' \
   -H 'Content-Type: application/json' \
@@ -349,15 +373,15 @@ curl -v -X POST \
 
 Response
 
-```console
+```text
 201 Created
 ```
 
-<h4>Get a device (Optional)</h4>
+#### Get a device (Optional)
 
 Request
 
-```console
+```bash
 curl -s -X GET \
   'http://iot-test.lab.fiware.org:24061/iot/devices/motion001' \
   -H 'FIWARE-Service: iot' \
@@ -394,11 +418,11 @@ Response
 }
 ```
 
-<h4>Send the measurement</h4>
+#### Send the measurement
 
 Request
 
-```console
+```bash
 curl -v -X POST \
   'http://iot-test.lab.fiware.org:24051/iot/d?k=4jggokgpepnvsb2uv4s40d59ov&i=motion001' \
   -H 'FIWARE-Service: iot' \
@@ -409,15 +433,15 @@ curl -v -X POST \
 
 Response
 
-```console
+```text
 200 OK
 ```
 
-<h4>Read the measurement</h4>
+#### Read the measurement
 
 Request
 
-```console
+```bash
 curl -s -X GET \
   'http://iot-test.lab.fiware.org:24040/v2/entities/urn:ngsd-ld:Motion:001' \
   -H 'FIWARE-Service: iot' \
@@ -461,6 +485,6 @@ Response
 ### Useful links
 
 -   General [information](https://github.com/Fiware/catalogue/tree/master/iot-agents) about IoT Agents
--   [UltraLight2.0](https://fiware-iotagent-ul.readthedocs.io/en/latest/) tutorial
--   [LightWeightM2M](https://fiware-iotagent-lwm2m.readthedocs.io/en/latest/) tutorial
--   [JSON](https://fiware-iotagent-json.readthedocs.io/en/latest/) turorial
+-   [IoT Agent for UltraLight2.0](https://fiware-iotagent-ul.readthedocs.io/en/latest/) documentation
+-   [IoT Agent for LightWeightM2M](https://fiware-iotagent-lwm2m.readthedocs.io/en/latest/) documentation
+-   [IoT Agent for JSON](https://fiware-iotagent-json.readthedocs.io/en/latest/) turorial
