@@ -11,7 +11,7 @@
 
 This documentation describes the process to apply and validate an IoT Device as FIWARE Ready .
 
-To join FIWARE-ready IoT Devices Program, you need to follow a series pof steps, including an simple validation of your
+To join FIWARE-ready IoT Devices Program, you need to follow a series of steps, including an simple validation of your
 product (implementation), where you will connect it to a FIWARE public instance and you will perform a series of tests:
 
 -   IoT services creation (optional)
