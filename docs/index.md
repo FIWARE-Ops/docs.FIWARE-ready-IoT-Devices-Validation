@@ -283,7 +283,7 @@ curl -v -X POST \
   -d '{
         "services": [{
         "apikey": "4jggokgpepnvsb2uv4s40d59ov",
-        "cbroker": "http://orion:1026",
+        "cbroker": "http://iot-test.lab.fiware.org:24040",
         "entity_type": "Motion",
         "resource": "/iot/d"}]
      }'
