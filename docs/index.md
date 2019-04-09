@@ -88,43 +88,86 @@ New IoT Agents are being added over time, and the current supported set of proto
 <table border="1">
 <thead>
 <tr>
-<th>Host</th>
-<th>Protocol</th>
+<th>Protocol/Payload</th>
 <th>URL</th>
 <th>Port type</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td rowspan="2">UltraLight</td>
-<td rowspan="2">UltraLight2.0/HTTP<br />MQTT/TCP</td>
-<td>http://iot-test.lab.fiware.org:24051</td>
-<td>South Port</td>
+<td rowspan="2">JSON over HTTP</td>
+<td>https://iot-ready-json-http.lab.fiware.org:24061</td>
+<td>Device management</td>
 </tr>
 <tr>
-<td>http://iot-test.lab.fiware.org:24061</td>
-<td>North Port</td>
+<td>https://iot-ready-json-http.lab.fiware.org:27896</td>
+<td>Data provisioning</td>
+</tr>
+<tr>
+<td rowspan="3">JSON over MQTT</td>
+<td>https://iot-ready-ul-mqtt.lab.fiware.org:24061</td>
+<td>Device management</td>
+</tr>
+<tr>
+<td>https://iot-ready-ul-mqtt.lab.fiware.org:27897</td>
+<td>Data provisioning</td>
+</tr>
+<tr>
+<td>https://iot-ready-ul-mqtt.lab.fiware.org:27898</td>
+<td>Message Broker (Mosquitto)</td>
+</tr>
+<tr>
+<td rowspan="2">JSON over AMQP</td>
+<td>https://iot-ready-ul-amqp.lab.fiware.org:24061</td>
+<td>Device management</td>
+</tr>
+<tr>
+<td>https://iot-ready-ul-amqp.lab.fiware.org:27899</td>
+<td>Data provisioning</td>
+</tr>
+<tr>
+<td rowspan="2">UltraLight 2.0 over HTTP</td>
+<td>https://iot-ready-ul-http.lab.fiware.org:24061</td>
+<td>Device management</td>
+</tr>
+<tr>
+<td>https://iot-ready-ul-http.lab.fiware.org:27896</td>
+<td>Data provisioning</td>
+</tr>
+<tr>
+<td rowspan="3">UltraLight 2.0 over MQTT</td>
+<td>https://iot-ready-ul-mqtt.lab.fiware.org:24061</td>
+<td>Device management</td>
+</tr>
+<tr>
+<td>https://iot-ready-ul-mqtt.lab.fiware.org:27900</td>
+<td>Data provisioning</td>
+</tr>
+<tr>
+<td>https://iot-ready-ul-mqtt.lab.fiware.org:27901</td>
+<td>Message Broker (Mosquitto)</td>
+</tr>
+<tr>
+<td rowspan="2">UltraLight 2.0 over AMQP</td>
+<td>https://iot-ready-ul-amqp.lab.fiware.org:24061</td>
+<td>Device management</td>
+</tr>
+<tr>
+<td>https://iot-ready-ul-amqp.lab.fiware.org:27902</td>
+<td>Data provisioning</td>
 </tr>
 <tr>
 <td rowspan="2">LightWeightM2M</td>
-<td rowspan="2">LWM2M/CoAP</td>
-<td>http://iot-test.lab.fiware.org:24052</td>
-<td>South Port</td>
+<td>https://iot-ready-lwm2m.lab.fiware.org:24061</td>
+<td>Device management</td>
 </tr>
 <tr>
-<td>http://iot-test.lab.fiware.org:24062</td>
-<td>North Port</td>
+<td>https://iot-ready-lwm2m.lab.fiware.org:27903</td>
+<td>Data provisioning</td>
 </tr>
 <tr>
 <td>Orion Context Broker</td>
-<td>NGSIv2</td>
-<td>https://iot-test.lab.fiware.org:24040</td>
-<td>Protected by Wilma</td>
-</tr>
-<tr>
-<td>Keyrock Token Provider</td>
-<td>&nbsp;</td>
-<td>https://tools.lab.fiware.org/ktp/iot-test</td>
+<td>https://iot-ready.lab.fiware.org:21026</td>
 <td>&nbsp;</td>
 </tr>
 </tbody>
@@ -215,7 +258,7 @@ and your device will be published on the list of FIWARE-ready IoT Devices commer
 your own web the program logo and specific instructions to connect your product to FIWARE ecosystems (based on a
 template we will provide as well).
 
-### Example
+### Example (UltraLight 2.0 over HTTP)
 
 Postman [collection](https://app.getpostman.com/run-collection/fe0525384f57d03afdf0) and
 [documentation](https://documenter.getpostman.com/view/3940441/Rzfnkn2W#6955b7fa-4e9a-4bc8-b6d5-a66dc2962a80) have been
@@ -230,7 +273,7 @@ Request
 
 ```bash
 curl -s -X GET \
-  'http://iot-test.lab.fiware.org:24040/version' | python -m json.tool
+  'https://iot-test.lab.fiware.org:21026/version' | python -m json.tool
 ```
 
 Response
@@ -256,7 +299,7 @@ Request
 
 ```bash
 curl -s -X GET \
-  'http://iot-test.lab.fiware.org:24061/iot/about' | python -m json.tool
+  'https://iot-ready-ul-http.lab.fiware.org:24061/iot/about' | python -m json.tool
 ```
 
 Response
@@ -265,7 +308,7 @@ Response
 {
     "baseRoot": "/",
     "libVersion": "2.7.0",
-    "port": 4061,
+    "port": 24061,
     "version": "1.7.0"
 }
 ```
@@ -276,7 +319,7 @@ Request
 
 ```bash
 curl -v -X POST \
-  'http://iot-test.lab.fiware.org:24061/iot/services' \
+  'https://iot-ready-ul-http.lab.fiware.org:24061/iot/services' \
   -H 'Content-Type: application/json' \
   -H 'FIWARE-Service: iot' \
   -H 'FIWARE-ServicePath: /' \
@@ -303,7 +346,7 @@ Request
 
 ```bash
 curl -s -X GET \
-  'http://iot-test.lab.fiware.org:24061/iot/services' \
+  'https://iot-ready-ul-http.lab.fiware.org:24061/iot/services' \
   -H 'FIWARE-Service: iot' \
   -H 'FIWARE-ServicePath: /' | python -m json.tool
 ```
@@ -349,7 +392,7 @@ Request
 
 ```bash
 curl -v -X POST \
-  'http://iot-test.lab.fiware.org:24061/iot/devices' \
+  'https://iot-ready-ul-http.lab.fiware.org:24061/iot/devices' \
   -H 'Content-Type: application/json' \
   -H 'FIWARE-Service: iot' \
   -H 'FIWARE-ServicePath: /' \
@@ -383,7 +426,7 @@ Request
 
 ```bash
 curl -s -X GET \
-  'http://iot-test.lab.fiware.org:24061/iot/devices/motion001' \
+  'https://iot-ready-ul-http.lab.fiware.org:24061/iot/devices/motion001' \
   -H 'FIWARE-Service: iot' \
   -H 'FIWARE-ServicePath: /' | python -m json.tool
 ```
@@ -424,7 +467,7 @@ Request
 
 ```bash
 curl -v -X POST \
-  'http://iot-test.lab.fiware.org:24051/iot/d?k=4jggokgpepnvsb2uv4s40d59ov&i=motion001' \
+  'https://iot-ready-ul-http.lab.fiware.org:27896/iot/d?k=4jggokgpepnvsb2uv4s40d59ov&i=motion001' \
   -H 'FIWARE-Service: iot' \
   -H 'FIWARE-ServicePath: /' \
   -H 'Content-Type: text/plain' \
@@ -443,7 +486,7 @@ Request
 
 ```bash
 curl -s -X GET \
-  'http://iot-test.lab.fiware.org:24040/v2/entities/urn:ngsd-ld:Motion:001' \
+  'https://iot-ready.lab.fiware.org:21026/v2/entities/urn:ngsd-ld:Motion:001' \
   -H 'FIWARE-Service: iot' \
   -H 'FIWARE-ServicePath: /' | python -m json.tool
 ```
