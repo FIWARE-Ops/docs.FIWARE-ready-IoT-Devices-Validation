@@ -273,7 +273,7 @@ Request
 
 ```bash
 curl -s -X GET \
-  'https://iot-test.lab.fiware.org:21026/version' | python -m json.tool
+  'https://iot-ready.lab.fiware.org:21026/version' | python -m json.tool
 ```
 
 Response
