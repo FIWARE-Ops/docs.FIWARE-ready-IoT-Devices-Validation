@@ -95,80 +95,38 @@ New IoT Agents are being added over time, and the current supported set of proto
 </thead>
 <tbody>
 <tr>
-<td rowspan="2">JSON over HTTP</td>
-<td>https://iot-ready-json-http.lab.fiware.org:24061</td>
+<td rowspan="4">JSON</td>
+<td>https://iot-ready-json.lab.fiware.org:24061</td>
 <td>Device management</td>
 </tr>
 <tr>
-<td>https://iot-ready-json-http.lab.fiware.org:27896</td>
+<td>https://iot-ready-json.lab.fiware.org:27896</td>
 <td>Data provisioning</td>
 </tr>
 <tr>
-<td rowspan="3">JSON over MQTT</td>
-<td>https://iot-ready-ul-mqtt.lab.fiware.org:24061</td>
-<td>Device management</td>
+<td>tcp://iot-ready-json.lab.fiware.org:27897</td>
+<td>Mosquitto</td>
 </tr>
 <tr>
-<td>https://iot-ready-ul-mqtt.lab.fiware.org:27897</td>
-<td>Data provisioning</td>
-</tr>
-<tr>
-<td>https://iot-ready-ul-mqtt.lab.fiware.org:27898</td>
-<td>Message Broker (Mosquitto)</td>
-</tr>
-<tr>
-<td rowspan="2">JSON over AMQP</td>
-<td>https://iot-ready-ul-amqp.lab.fiware.org:24061</td>
-<td>Device management</td>
-</tr>
-<tr>
-<td>https://iot-ready-ul-amqp.lab.fiware.org:27899</td>
-<td>Data provisioning</td>
-</tr>
-<tr>
-<td rowspan="2">UltraLight 2.0 over HTTP</td>
-<td>https://iot-ready-ul-http.lab.fiware.org:24061</td>
-<td>Device management</td>
-</tr>
-<tr>
-<td>https://iot-ready-ul-http.lab.fiware.org:27896</td>
-<td>Data provisioning</td>
-</tr>
-<tr>
-<td rowspan="3">UltraLight 2.0 over MQTT</td>
-<td>https://iot-ready-ul-mqtt.lab.fiware.org:24061</td>
-<td>Device management</td>
-</tr>
-<tr>
-<td>https://iot-ready-ul-mqtt.lab.fiware.org:27900</td>
-<td>Data provisioning</td>
-</tr>
-<tr>
-<td>https://iot-ready-ul-mqtt.lab.fiware.org:27901</td>
-<td>Message Broker (Mosquitto)</td>
-</tr>
-<tr>
-<td rowspan="2">UltraLight 2.0 over AMQP</td>
-<td>https://iot-ready-ul-amqp.lab.fiware.org:24061</td>
-<td>Device management</td>
-</tr>
-<tr>
-<td>https://iot-ready-ul-amqp.lab.fiware.org:27902</td>
-<td>Data provisioning</td>
-</tr>
-<tr>
-<td rowspan="2">LightWeightM2M</td>
-<td>https://iot-ready-lwm2m.lab.fiware.org:24061</td>
-<td>Device management</td>
-</tr>
-<tr>
-<td>https://iot-ready-lwm2m.lab.fiware.org:27903</td>
-<td>Data provisioning</td>
-</tr>
-<tr>
+<td>https://iot-ready-json.lab.fiware.org:21026</td>
 <td>Orion Context Broker</td>
-<td>https://iot-ready.lab.fiware.org:21026</td>
-<td>&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="4">UltraLight 2.0</td>
+<td>https://iot-ready-ul.lab.fiware.org:24061</td>
+<td>Device management</td>
+</tr>
+<tr>
+<td>https://iot-ready-ul.lab.fiware.org:27896</td>
+<td>Data provisioning</td>
+</tr>
+<tr>
+<td>tcp://iot-ready-ul.lab.fiware.org:27898</td>
+<td>Mosquitto</td>
+</tr>
+<tr>
+<td>https://iot-ready-ul.lab.fiware.org:21026</td>
+<td>Orion Context Broker</td>
 </tr>
 </tbody>
 </table>
@@ -273,7 +231,7 @@ Request
 
 ```bash
 curl -s -X GET \
-  'https://iot-ready.lab.fiware.org:21026/version' | python -m json.tool
+  'https://iot-ready-ul.lab.fiware.org:21026/version' | python -m json.tool
 ```
 
 Response
@@ -281,14 +239,14 @@ Response
 ```json
 {
     "orion": {
-        "compile_time": "Fri Sep 28 09:56:56 UTC 2018",
+        "compile_time": "Mon Feb 25 15:15:27 UTC 2019",
         "compiled_by": "root",
-        "compiled_in": "4852e5bea506",
-        "doc": "https://fiware-orion.readthedocs.org/en/2.0.0/",
-        "git_hash": "485128e135f4225040841f5ab3b85d42cfe68f55",
-        "release_date": "Fri Sep 28 09:56:56 UTC 2018",
-        "uptime": "3 d, 15 h, 40 m, 53 s",
-        "version": "2.0.0"
+        "compiled_in": "37fdc92c3e97",
+        "doc": "https://fiware-orion.rtfd.io/en/2.2.0/",
+        "git_hash": "5a46a70de9e0b809cce1a1b7295027eea0aa757f",
+        "release_date": "Mon Feb 25 15:15:27 UTC 2019",
+        "uptime": "0 d, 0 h, 8 m, 30 s",
+        "version": "2.2.0"
     }
 }
 ```
@@ -299,7 +257,7 @@ Request
 
 ```bash
 curl -s -X GET \
-  'https://iot-ready-ul-http.lab.fiware.org:24061/iot/about' | python -m json.tool
+  'https://iot-ready-ul.lab.fiware.org:24061/iot/about' | python -m json.tool
 ```
 
 Response
@@ -307,27 +265,27 @@ Response
 ```json
 {
     "baseRoot": "/",
-    "libVersion": "2.7.0",
+    "libVersion": "2.8.0-next",
     "port": 24061,
-    "version": "1.7.0"
+    "version": "1.8.0-next"
 }
 ```
 
-#### Create a service (Optional)
+#### Create a service
 
 Request
 
 ```bash
-curl -v -X POST \
-  'https://iot-ready-ul-http.lab.fiware.org:24061/iot/services' \
+curl -i -X POST \
+  'https://iot-ready-ul.lab.fiware.org:24061/iot/services' \
   -H 'Content-Type: application/json' \
-  -H 'FIWARE-Service: iot' \
-  -H 'FIWARE-ServicePath: /' \
+  -H 'FIWARE-Service: ul' \
+  -H 'FIWARE-ServicePath: /http' \
   -d '{
         "services": [{
-        "apikey": "4jggokgpepnvsb2uv4s40d59ov",
-        "cbroker": "http://iot-test.lab.fiware.org:24040",
-        "entity_type": "Motion",
+        "apikey": "ulhttpkey",
+        "cbroker": "https://iot-ready-ul.lab.fiware.org:21026",
+        "entity_type": "ET-UL-HTTP",
         "resource": "/iot/d"}]
      }'
 ```
@@ -335,7 +293,15 @@ curl -v -X POST \
 Response
 
 ```text
-201 Created
+HTTP/1.1 201 Created
+Server: nginx/1.15.10
+Date: Wed, 10 Apr 2019 13:35:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+X-Powered-By: Express
+Fiware-Correlator: f0fadf14-67b4-417b-8025-96a95491c91d
+ETag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
 ```
 
 #### List a service (Optional)
@@ -346,14 +312,12 @@ Request
 
 ```bash
 curl -s -X GET \
-  'https://iot-ready-ul-http.lab.fiware.org:24061/iot/services' \
-  -H 'FIWARE-Service: iot' \
-  -H 'FIWARE-ServicePath: /' | python -m json.tool
+  'https://iot-ready-ul.lab.fiware.org:24061/iot/services' \
+  -H 'FIWARE-Service: ul' \
+  -H 'FIWARE-ServicePath: /http' | python -m json.tool
 ```
 
 Response
-
-In case if service was created:
 
 ```json
 {
@@ -361,28 +325,19 @@ In case if service was created:
     "services": [
         {
             "__v": 0,
-            "_id": "5c1a29d4b0d38d428ef0bc26",
-            "apikey": "4jggokgpepnvsb2uv4s40d59ov",
+            "_id": "5cadf10e8be50e00118f4818",
+            "apikey": "ulhttpkey",
             "attributes": [],
             "commands": [],
-            "entity_type": "Motion",
+            "entity_type": "ET-UL-HTTP",
             "internal_attributes": [],
             "lazy": [],
             "resource": "/iot/d",
-            "service": "iot",
+            "service": "ul",
             "static_attributes": [],
-            "subservice": "/"
+            "subservice": "/http"
         }
     ]
-}
-```
-
-In case if you use default service:
-
-```json
-{
-    "count": 0,
-    "services": []
 }
 ```
 
@@ -391,25 +346,22 @@ In case if you use default service:
 Request
 
 ```bash
-curl -v -X POST \
-  'https://iot-ready-ul-http.lab.fiware.org:24061/iot/devices' \
+curl -i -X POST \
+  'https://iot-ready-ul.lab.fiware.org:24061/iot/devices' \
   -H 'Content-Type: application/json' \
-  -H 'FIWARE-Service: iot' \
-  -H 'FIWARE-ServicePath: /' \
+  -H 'FIWARE-Service: ul' \
+  -H 'FIWARE-ServicePath: /http' \
   -d '{
        "devices": [{
-         "device_id": "motion001",
-         "protocol": "MQTT",
-         "entity_name": "urn:ngsd-ld:Motion:001",
-         "entity_type": "Motion",
+         "device_id": "DID-UL-HTTP",
+         "protocol": "PDI-IoTA-UltraLight",
+         "transport": "HTTP",
+         "entity_name": "EID-UL-HTTP",
+         "entity_type": "ET-UL-HTTP",
          "attributes": [{
          "object_id": "c",
          "name": "count",
-         "type": "int" }],
-       "static_attributes": [{
-         "name":"refStore",
-         "type": "Relationship",
-        "value": "urn:ngsi-ld:Store:001"}]
+         "type": "Integer" }]
     }]
 }'
 ```
@@ -417,7 +369,15 @@ curl -v -X POST \
 Response
 
 ```text
-201 Created
+HTTP/1.1 201 Created
+Server: nginx/1.15.10
+Date: Wed, 10 Apr 2019 13:35:35 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+X-Powered-By: Express
+Fiware-Correlator: 1dc92cca-9105-4e67-89fa-ffa02974e0a7
+ETag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
 ```
 
 #### Get a device (Optional)
@@ -426,9 +386,9 @@ Request
 
 ```bash
 curl -s -X GET \
-  'https://iot-ready-ul-http.lab.fiware.org:24061/iot/devices/motion001' \
-  -H 'FIWARE-Service: iot' \
-  -H 'FIWARE-ServicePath: /' | python -m json.tool
+  'https://iot-ready-ul.lab.fiware.org:24061/iot/devices/DID-UL-HTTP' \
+  -H 'FIWARE-Service: ul' \
+  -H 'FIWARE-ServicePath: /http' | python -m json.tool
 ```
 
 Response
@@ -439,24 +399,18 @@ Response
         {
             "name": "count",
             "object_id": "c",
-            "type": "int"
+            "type": "Integer"
         }
     ],
     "commands": [],
-    "device_id": "motion001",
-    "entity_name": "urn:ngsd-ld:Motion:001",
-    "entity_type": "Motion",
+    "device_id": "DID-UL-HTTP",
+    "entity_name": "EID-UL-HTTP",
+    "entity_type": "ET-UL-HTTP",
     "lazy": [],
-    "protocol": "MQTT",
-    "service": "iot",
-    "service_path": "/",
-    "static_attributes": [
-        {
-            "name": "refStore",
-            "type": "Relationship",
-            "value": "urn:ngsi-ld:Store:001"
-        }
-    ],
+    "protocol": "PDI-IoTA-UltraLight",
+    "service": "ul",
+    "service_path": "/http",
+    "static_attributes": [],
     "transport": "HTTP"
 }
 ```
@@ -466,10 +420,10 @@ Response
 Request
 
 ```bash
-curl -v -X POST \
-  'https://iot-ready-ul-http.lab.fiware.org:27896/iot/d?k=4jggokgpepnvsb2uv4s40d59ov&i=motion001' \
-  -H 'FIWARE-Service: iot' \
-  -H 'FIWARE-ServicePath: /' \
+curl -i -X POST \
+  'https://iot-ready-ul.lab.fiware.org:27896/iot/d?k=ulhttpkey&i=DID-UL-HTTP' \
+  -H 'FIWARE-Service: ul' \
+  -H 'FIWARE-ServicePath: /http' \
   -H 'Content-Type: text/plain' \
   -d 'c|1'
 ```
@@ -477,7 +431,14 @@ curl -v -X POST \
 Response
 
 ```text
-200 OK
+HTTP/1.1 200 OK
+Server: nginx/1.15.10
+Date: Wed, 10 Apr 2019 13:35:59 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 0
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/"0-2jmj7l5rSw0yVb/vlWAYkK/YBwk"
 ```
 
 #### Read the measurement
@@ -486,48 +447,277 @@ Request
 
 ```bash
 curl -s -X GET \
-  'https://iot-ready.lab.fiware.org:21026/v2/entities/urn:ngsd-ld:Motion:001' \
-  -H 'FIWARE-Service: iot' \
-  -H 'FIWARE-ServicePath: /' | python -m json.tool
+  'https://iot-ready-ul.lab.fiware.org:21026/v2/entities?type=ET-UL-HTTP' \
+  -H 'FIWARE-Service: ul' \
+  -H 'FIWARE-ServicePath: /http' | python -m json.tool
+```
+
+Response
+
+```json
+[
+    {
+        "TimeInstant": {
+            "metadata": {},
+            "type": "ISO8601",
+            "value": "2019-04-10T13:35:59.00Z"
+        },
+        "count": {
+            "metadata": {
+                "TimeInstant": {
+                    "type": "ISO8601",
+                    "value": "2019-04-10T13:35:59.504Z"
+                }
+            },
+            "type": "Integer",
+            "value": "1"
+        },
+        "id": "EID-UL-HTTP",
+        "type": "ET-UL-HTTP"
+    }
+]
+```
+
+### Example (UltraLight 2.0 over MQTT)
+
+Postman [collection](https://app.getpostman.com/run-collection/fe0525384f57d03afdf0) and
+[documentation](https://documenter.getpostman.com/view/3940441/Rzfnkn2W#6955b7fa-4e9a-4bc8-b6d5-a66dc2962a80) have been
+prepared for test scenario. The collection uses variables, public (default) ones are in the collection. You can override
+them (except endpoints).
+
+In the scenarios with curl variables replaced with default values.
+
+#### Check the Orion Version (Optional)
+
+Request
+
+```bash
+curl -s -X GET \
+  'https://iot-ready-ul.lab.fiware.org:21026/version' | python -m json.tool
 ```
 
 Response
 
 ```json
 {
-    "TimeInstant": {
-        "metadata": {},
-        "type": "ISO8601",
-        "value": "2018-12-19T11:33:54.00Z"
-    },
-    "count": {
-        "metadata": {
-            "TimeInstant": {
-                "type": "ISO8601",
-                "value": "2018-12-19T11:33:54.485Z"
-            }
-        },
-        "type": "int",
-        "value": "1"
-    },
-    "id": "urn:ngsd-ld:Motion:001",
-    "refStore": {
-        "metadata": {
-            "TimeInstant": {
-                "type": "ISO8601",
-                "value": "2018-12-19T11:33:54.485Z"
-            }
-        },
-        "type": "Relationship",
-        "value": "urn:ngsi-ld:Store:001"
-    },
-    "type": "Motion"
+    "orion": {
+        "compile_time": "Mon Feb 25 15:15:27 UTC 2019",
+        "compiled_by": "root",
+        "compiled_in": "37fdc92c3e97",
+        "doc": "https://fiware-orion.rtfd.io/en/2.2.0/",
+        "git_hash": "5a46a70de9e0b809cce1a1b7295027eea0aa757f",
+        "release_date": "Mon Feb 25 15:15:27 UTC 2019",
+        "uptime": "0 d, 0 h, 9 m, 54 s",
+        "version": "2.2.0"
+    }
 }
 ```
 
-### Useful links
+#### Check the UltraLight Agent health (Optional)
 
--   General [information](https://github.com/Fiware/catalogue/tree/master/iot-agents) about IoT Agents
--   [IoT Agent for UltraLight2.0](https://fiware-iotagent-ul.readthedocs.io/en/latest/) documentation
--   [IoT Agent for LightWeightM2M](https://fiware-iotagent-lwm2m.readthedocs.io/en/latest/) documentation
--   [IoT Agent for JSON](https://fiware-iotagent-json.readthedocs.io/en/latest/) turorial
+Request
+
+```bash
+curl -s -X GET \
+  'https://iot-ready-ul.lab.fiware.org:24061/iot/about' | python -m json.tool
+```
+
+Response
+
+```json
+{
+    "baseRoot": "/",
+    "libVersion": "2.8.0-next",
+    "port": 24061,
+    "version": "1.8.0-next"
+}
+```
+
+#### Create a service
+
+Request
+
+```bash
+curl -i -X POST \
+  'https://iot-ready-ul.lab.fiware.org:24061/iot/services' \
+  -H 'Content-Type: application/json' \
+  -H 'FIWARE-Service: ul' \
+  -H 'FIWARE-ServicePath: /mqtt' \
+  -d '{
+        "services": [{
+        "apikey": "ulmqttkey",
+        "cbroker": "https://iot-ready-ul.lab.fiware.org:21026",
+        "entity_type": "ET-UL-MQTT",
+        "resource": "/iot/d"}]
+     }'
+```
+
+Response
+
+```text
+HTTP/1.1 201 Created
+Server: nginx/1.15.10
+Date: Wed, 10 Apr 2019 13:36:33 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+X-Powered-By: Express
+Fiware-Correlator: c693a732-2cf2-46fd-b39a-f4f2e5c3e690
+ETag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+```
+
+#### List a service (Optional)
+
+List of services will be empty if you missed previously step (if you use default service)
+
+Request
+
+```bash
+curl -s -X GET \
+  'https://iot-ready-ul.lab.fiware.org:24061/iot/services' \
+  -H 'FIWARE-Service: ul' \
+  -H 'FIWARE-ServicePath: /mqtt' | python -m json.tool
+```
+
+Response
+
+```json
+{
+    "count": 1,
+    "services": [
+        {
+            "__v": 0,
+            "_id": "5cadf1618be50e00118f481a",
+            "apikey": "ulmqttkey",
+            "attributes": [],
+            "commands": [],
+            "entity_type": "ET-UL-MQTT",
+            "internal_attributes": [],
+            "lazy": [],
+            "resource": "/iot/d",
+            "service": "ul",
+            "static_attributes": [],
+            "subservice": "/mqtt"
+        }
+    ]
+}
+```
+
+#### Register a device
+
+Request
+
+```bash
+curl -i -X POST \
+  'https://iot-ready-ul.lab.fiware.org:24061/iot/devices' \
+  -H 'Content-Type: application/json' \
+  -H 'FIWARE-Service: ul' \
+  -H 'FIWARE-ServicePath: /mqtt' \
+  -d '{
+       "devices": [{
+         "device_id": "DID-UL-MQTT",
+         "protocol": "PDI-IoTA-UltraLight",
+         "transport": "MQTT",
+         "entity_name": "EID-UL-MQTT",
+         "entity_type": "ET-UL-MQTT",
+         "attributes": [{
+         "object_id": "c",
+         "name": "count",
+         "type": "Integer" }]
+    }]
+}'
+```
+
+Response
+
+```text
+HTTP/1.1 201 Created
+Server: nginx/1.15.10
+Date: Wed, 10 Apr 2019 13:36:57 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+X-Powered-By: Express
+Fiware-Correlator: 41b8fe81-bf64-462f-95f8-3d56b302189d
+ETag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+```
+
+#### Get a device (Optional)
+
+Request
+
+```bash
+curl -s -X GET \
+  'https://iot-ready-ul.lab.fiware.org:24061/iot/devices/DID-UL-MQTT' \
+  -H 'FIWARE-Service: ul' \
+  -H 'FIWARE-ServicePath: /mqtt' | python -m json.tool
+```
+
+Response
+
+```json
+{
+    "attributes": [
+        {
+            "name": "count",
+            "object_id": "c",
+            "type": "Integer"
+        }
+    ],
+    "commands": [],
+    "device_id": "DID-UL-MQTT",
+    "entity_name": "EID-UL-MQTT",
+    "entity_type": "ET-UL-MQTT",
+    "lazy": [],
+    "protocol": "PDI-IoTA-UltraLight",
+    "service": "ul",
+    "service_path": "/mqtt",
+    "static_attributes": [],
+    "transport": "MQTT"
+}
+```
+
+#### Send the measurement
+
+Request
+
+```bash
+docker run -it --rm efrecon/mqtt-client pub -h iot-ready-ul.lab.fiware.org -p 27898 -m "c|1" -t "/ulmqttkey/DID-UL-MQTT/attrs"
+```
+
+#### Read the measurement
+
+Request
+
+```bash
+curl -s -X GET \
+  'https://iot-ready-ul.lab.fiware.org:21026/v2/entities?type=ET-UL-MQTT' \
+  -H 'FIWARE-Service: ul' \
+  -H 'FIWARE-ServicePath: /mqtt' | python -m json.tool
+```
+
+Response
+
+```json
+[
+    {
+        "TimeInstant": {
+            "metadata": {},
+            "type": "ISO8601",
+            "value": "2019-04-10T13:37:47.00Z"
+        },
+        "count": {
+            "metadata": {
+                "TimeInstant": {
+                    "type": "ISO8601",
+                    "value": "2019-04-10T13:37:47.121Z"
+                }
+            },
+            "type": "Integer",
+            "value": "1"
+        },
+        "id": "EID-UL-MQTT",
+        "type": "ET-UL-MQTT"
+    }
+]
+```
