@@ -216,14 +216,13 @@ and your device will be published on the list of FIWARE-ready IoT Devices commer
 your own web the program logo and specific instructions to connect your product to FIWARE ecosystems (based on a
 template we will provide as well).
 
-### Example (UltraLight 2.0 over HTTP)
+### Postman Examples 
 
-Postman [collection](https://app.getpostman.com/run-collection/fe0525384f57d03afdf0) and
-[documentation](https://documenter.getpostman.com/view/3940441/Rzfnkn2W#6955b7fa-4e9a-4bc8-b6d5-a66dc2962a80) have been
+Postman [collection](https://documenter.getpostman.com/view/3940441/S1ENxJ6g) have been
 prepared for test scenario. The collection uses variables, public (default) ones are in the collection. You can override
 them (except endpoints).
 
-In the scenarios with curl variables replaced with default values.
+### UltraLight 2.0 over HTTP cURL example
 
 #### Check the Orion Version (Optional)
 
@@ -478,14 +477,7 @@ Response
 ]
 ```
 
-### Example (UltraLight 2.0 over MQTT)
-
-Postman [collection](https://app.getpostman.com/run-collection/fe0525384f57d03afdf0) and
-[documentation](https://documenter.getpostman.com/view/3940441/Rzfnkn2W#6955b7fa-4e9a-4bc8-b6d5-a66dc2962a80) have been
-prepared for test scenario. The collection uses variables, public (default) ones are in the collection. You can override
-them (except endpoints).
-
-In the scenarios with curl variables replaced with default values.
+### UltraLight 2.0 over MQTT cURL example
 
 #### Check the Orion Version (Optional)
 
