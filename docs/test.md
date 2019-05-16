@@ -38,15 +38,15 @@ The following test scenarios should be applied:
 Please, save all the communication established with the IoT Stack software APIs during the execution of each of the
 tests (responses you get).
 
-## Fill in the **FIWARE-Ready** IoT Device Manual Template
+## Fill in the _"FIWARE-Ready"_ IoT Device Manual Template
 
 Fill the template named
-[**FIWARE-ready** IoT Device Manual Template](https://docs.google.com/document/d/1g_ic6Vy5g9i04Oe-kyFf8gxvP2862IVCGH9KJIqKuYk/edit).
+[_"FIWARE-Ready"_ IoT Device Manual Template](https://docs.google.com/document/d/1g_ic6Vy5g9i04Oe-kyFf8gxvP2862IVCGH9KJIqKuYk/edit).
 This template requires you to describe how your hardware device communicates with FIWARE. If any sections within the
 template do not make sense or not apply to your implementation, please explain the reason(s) in its corresponding place.
 This document will be the basic one used by the user to configure and use your components, therefore, you should
 describe in details how to connect the device to Orion Context Broker to send context information. If you have any
-questions regarding the information in this template, you are welcome to contact the **FIWARE-ready** IoT Devices
+questions regarding the information in this template, you are welcome to contact the _"FIWARE-Ready"_ IoT Devices
 Program reviewers [IoTReady@lists.fiware.org​](mailto:I​oTReady@lists.fiware.org​).
 
 ## Fill in the information of your product into the marketplace
@@ -56,7 +56,7 @@ validated. It goes to the ​ web page in which you can select **Start a new app
 
 ![](img/02.png)
 
-If you want to validate several **FIWARE-ready** IoT Devices please remember to fill in multiple seaparate applications.
+If you want to validate several _"FIWARE-Ready"_ IoT Devices please remember to fill in multiple seaparate applications.
 This information will describe us how your hardware device communicates with FIWARE.
 
 ![](img/03.png)
@@ -64,7 +64,7 @@ This information will describe us how your hardware device communicates with FIW
 You can see that the status is Draft which means that it is not sent to the reviewers yet. Additionally, you have the
 possibility to delete this application if it was not delivered for validation yet. If you click on **Fill** button in
 the **Company information** box, the form requests you to introduce the name and logo of the company, address, city,
-country and contact email. All of them all mandatory to validate your **FIWARE-ready** IoT Device. If you click on
+country and contact email. All of them all mandatory to validate your _"FIWARE-Ready"_ IoT Device. If you click on
 **Fill** button in the **Solution/Service information** box, the form request you to fill in the technical detail about
 your solution in order that the reviewers can validate the solution. It is very important that you provide the URL to
 download software drivers/libraries/components, tutorial and guidelines facilitating the integration with FIWARE.
@@ -79,10 +79,10 @@ Once that you finish with the process to introduce the data, you can submit the 
 
 ![](img/04.png)
 
-**FIWARE-ready** IoT Devices Program reviewers will evaluate the provided documentation and contact with you in case any
+_"FIWARE-Ready"_ IoT Device Program reviewers will evaluate the provided documentation and contact with you in case any
 clarification is required. The result of this evaluation will be a Test Report that will be published in the marketplace
-application page. Once the evaluation is finished, you have successfully completed the **FIWARE-ready** IoT Devices
-Program, and your device will be published on the list of **FIWARE-ready** IoT Devices commercial devices available at
+application page. Once the evaluation is finished, you have successfully completed the _"FIWARE-Ready"_ IoT Device
+Program, and your device will be published on the list of _"FIWARE-Ready"_ IoT Devices commercial devices available at
 [FIWARE Marketplace](​http://marketplace.fiware.org)​. Once the product is validated you will also be able to publish in
 your own web the program logo and specific instructions to connect your product to FIWARE ecosystems (based on a
 template we will provide as well).
