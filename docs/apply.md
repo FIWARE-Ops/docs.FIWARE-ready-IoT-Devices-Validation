@@ -12,13 +12,15 @@
     Then, under the **solution/service** section, choose **FIWARE-ready IoT Device** under **category** and a proper
     domain of application.
 6.  You might be asked to provide extra information or to have an interview with **FIWARE-ready** IoT Device reviewers
-    who might require extra information about your solution so that they can take an objective validation decision.
-7.  **FIWARE-ready** IoT Device reviewers will evaluate the documentation provided and will perform themselves the
-    tests.
+    who might require extra information about your solution or even a real-time simulation of the entire process so that
+    they can take an objective validation decision.
+7.  **FIWARE-ready** IoT Device reviewers will evaluate the documentation provided and any hardware provided will
+    perform themselves the tests.
 
 In the event that your application is correct and satisfies all the requirements, congratulations you are now part of
 the FIWARE Marketplace! The product will be updated to the **FIWARE-ready** IoT Devices list of commercially available
-products. As a result of the validation process, a document with the result will be provided to you.
+products. As a result of the validation process, an official document signed by FIWARE will acredite the result of this
+process together with a document with the results obtained during the process
 
 ### FIWARE IoT platform
 
@@ -55,7 +57,7 @@ provides IoT Agents for:
     the OneM2M standard. A northbound interface with the Orion Context Broker is implemented as part of the product.
 
 There is also an [IoT Agent library](https://github.com/telefonicaid/iotagent-node-lib/) for developing your own IoT
-Agent.
+Agent to cover any other possible IoT Standard not covered by the existing enablers.
 
 New IoT Agents are being added over time, and the current supported set of protocols can be found within the
 [FIWARE Catalogue](https://github.com/Fiware/catalogue/tree/master/iot-agents)
