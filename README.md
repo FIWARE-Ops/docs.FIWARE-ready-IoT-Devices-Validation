@@ -11,8 +11,9 @@
 
 This documentation describes the process to apply and validate an IoT Device as FIWARE Ready.
 
-To join FIWARE-ready IoT Devices Program, you need to follow a series of steps, including an simple validation of your
-product (implementation), where you will connect it to a FIWARE public instance and you will perform a series of tests:
+To be featured as a _"FIWARE-Ready"_ IoT device, you need to follow some steps, including a simple validation of your
+product (implementation), where you will connect it to one of the FIWARE public instances available and you will have to
+perform the following tests:
 
 -   IoT services creation (optional)
 -   Device registration
@@ -20,15 +21,11 @@ product (implementation), where you will connect it to a FIWARE public instance 
 -   Send measurements
 -   Read measurements (optional)
 
-Second step of the validation process requires you to fill in a template to describe how your hardware device
-communicates with FIWARE.
-
-This validation process is an auto evaluation process but it is assisted by FIWARE-ready IoT Devices Program reviewers
-(IoTReady@lists.fiware.org) who will review your tests logs and evaluate whether your device is connecting with the
-public instance correctly.
-
-Once you have successfully completed the FIWARE-ready IoT Devices Program, your device will be published on
-[FIWARE Marketplace](http://marketplace.fiware.org​).
+This validation process is an auto-evaluation process but it is assisted by _"FIWARE-Ready"_ IoT Device reviewers
+[mailto:IoTReady@lists.fiware.org](IoTReady@lists.fiware.org), who will review your tests logs and evaluate whether your
+device is connecting with the public instance correctly. Once you have successfully completed the _"FIWARE-Ready"_ IoT
+device program, your device will be published on the _"FIWARE-Ready"_ IoT devices section of the
+[FIWARE Marketplace](https://marketplace.fiware.org/pages/devices).
 
 | :books: [Documentation](https://fiware-ready-iot-devices-validation.readthedocs.io/en/latest/) |
 | ---------------------------------------------------------------------------------------------- |
@@ -36,22 +33,25 @@ Once you have successfully completed the FIWARE-ready IoT Devices Program, your 
 
 ## Background
 
-Over 120 cities in Europe and Latin America belong to the Open & Agile Smart Cities (OASC) Alliance Initiative. They
-have agreed to operate, share and publish their smart city data using the FIWARE interoperability model.
+FIWARE **NGSI** is a universal standard for context data management used to facilitate the development of Smart
+Solutions. The FIWARE ecosystem means a straight-forward business opportunity for IoT products - It is simple, any
+device which is capable of directly or indirectly communicating using the NSGI protocol can be plugged into literally
+any FIWARE-based smart solution. This eliminates vendor lock-in and allows new entrants to the IoT device market to
+ensure their compatibility with existing solutions apriori.
 
-The FIWARE ecosystem means a straightforward business opportunity for IoT products: It is simple, the FIWARE IoT stack
-handles well-known IoT protocol standards and provides an enhanced OpenStack-based cloud environment plus a powerful set
-of standard REST APIs to ease the development of smart applications.
+Smart solutions _"powered by FIWARE"_ can easily integrate new IoT devices, and can leverage the existing FIWARE
+open-source [components](https://github.com/fiware/catalogue) to communicate with those devices via existing well-known
+IoT protocols.
 
-Thousands of companies, including large corporations, startups, SMEs and individual developers worldwide are willing to
-provide their Internet of Things (IoT) solutions to these cities, basing their solutions on FIWARE open source platform
-[components](https://github.com/fiware/catalogue).
+So far, developers have needed to search compatible IoT products and find out how to make them work. The certification
+of _"FIWARE-Ready"_ IoT devices provides the answer, as it is designed to demonstrate the ability of the IoT solutions
+to seamless interoperate with FIWARE platforms.
 
-So far, developers needed to search for **compatible** IoT products and find out how to make them work. The FIWARE-ready
-IoT Devices Program provides the answer as it is designed to demonstrate the ability of the IoT solutions to
-interoperate seamlessly with FIWARE platforms. The database of products and developers that have successfully
-accomplished the FIWARE-ready IoT Devices Program is the catalogue of the ecosystem of IoT hardware producers and
-technology providers that can be selected by the OASC Alliance cities to build their smart city solutions.
+The database of products and developers that have successfully been featured and certified as _"FIWARE-Ready"_ IoT
+devices will be part of the [FIWARE Marketplace](https://marketplace.fiware.org/pages/devices), a global one-stop shop
+that gives visibility to a wide range of _"Powered by FIWARE"_ solutions and platforms, _"FIWARE-Ready"_ technologies as
+well as FIWARE related training/coaching or consultancy, integration and support services. The **FIWARE Marketplace**
+serves the purpose of globally disseminating existing commercial offerings across the FIWARE ecosystem.
 
 ## License
 
