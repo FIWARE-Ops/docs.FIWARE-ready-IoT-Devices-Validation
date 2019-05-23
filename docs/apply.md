@@ -6,7 +6,7 @@
 3.  Execute tests according to the test workflow using the appropriate public instances or using your own deployed
     instance.
 4.  Fill in the
-    [**FIWARE-ready** IoT Device Manual Template](https://s3.amazonaws.com/fundingbox-sites/gear%2F1517994518659-FIWARE+Ready+IoT+Device+Manual+Template+v1+%282%29.docx)
+    [**FIWARE-ready** IoT Device Manual Template](https://docs.google.com/document/d/1Ur9JG2rzSsImVJpmz05aXXv2exRvmCvGgRo869mjWaw/edit?usp=sharing)
     with the information about how to use your component within FIWARE ecosystem.
 5.  Go to `http://marketplace.fiware.org/apply`. Register, and then apply by providing all your company information.
     Then, under the **solution/service** section, choose **FIWARE-ready IoT Device** under **category** and a proper
