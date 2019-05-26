@@ -13,7 +13,7 @@
 	"license": "CC-BY-4.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/fiware-ops/docs.FIWARE-ready-IoT-Devices-Validation"
+		"url": "https://github.com/fiware-ops/Marketplace"
 	},
 	"devDependencies": {
 		"eslint": "^5.6.0",
