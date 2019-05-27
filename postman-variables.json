@@ -1,0 +1,139 @@
+{
+	"id": "40d2c269-63f8-4bb6-ab31-783783cb1746",
+	"name": "FIWARE-Ready IoT Devices R",
+	"values": [
+		{
+			"key": "EntityName",
+			"value": "IoT-Ready-Entity",
+			"enabled": true
+		},
+		{
+			"key": "EntityType",
+			"value": "IoT-Ready-Type",
+			"enabled": true
+		},
+		{
+			"key": "HTTP-ServicePath",
+			"value": "/http",
+			"enabled": true
+		},
+		{
+			"key": "HTTP-Transport",
+			"value": "HTTP",
+			"enabled": true
+		},
+		{
+			"key": "MQTT-ServicePath",
+			"value": "/mqtt",
+			"enabled": true
+		},
+		{
+			"key": "MQTT-Transport",
+			"value": "MQTT",
+			"enabled": true
+		},
+		{
+			"key": "Protocol",
+			"value": "PDI-IoTA-UltraLight",
+			"enabled": true
+		},
+		{
+			"key": "Resource",
+			"value": "/iot/d",
+			"enabled": true
+		},
+		{
+			"key": "JSON-DM",
+			"value": "http://iot-r-json.lab.fiware.org:24061",
+			"enabled": true
+		},
+		{
+			"key": "JSON-Mosquitto",
+			"value": "http://iot-r-json.lab.fiware.org:27897",
+			"enabled": true
+		},
+		{
+			"key": "JSON-Orion",
+			"value": "http://iot-r-json.lab.fiware.org:21026",
+			"enabled": true
+		},
+		{
+			"key": "JSON-South",
+			"value": "http://iot-r-json.lab.fiware.org:27896",
+			"enabled": true
+		},
+		{
+			"key": "JSON-Service",
+			"value": "json",
+			"enabled": true
+		},
+		{
+			"key": "JSON-HTTP-APIKey",
+			"value": "jsonhttkey",
+			"enabled": true
+		},
+		{
+			"key": "JSON-HTTP-DeviceID",
+			"value": "JSON-HTTP-Device",
+			"enabled": true
+		},
+		{
+			"key": "JSON-MQTT-APIKey",
+			"value": "jsonmqttkey",
+			"enabled": true
+		},
+		{
+			"key": "JSON-MQTT-DeviceID",
+			"value": "JSON-MQTT-Device",
+			"enabled": true
+		},
+		{
+			"key": "UL-DM",
+			"value": "http://iot-r-ul.lab.fiware.org:24061",
+			"enabled": true
+		},
+		{
+			"key": "UL-Mosquitto",
+			"value": "http://iot-r-ul.lab.fiware.org:27898",
+			"enabled": true
+		},
+		{
+			"key": "UL-Orion",
+			"value": "http://iot-r-ul.lab.fiware.org:21026",
+			"enabled": true
+		},
+		{
+			"key": "UL-South",
+			"value": "http://iot-r-ul.lab.fiware.org:27896",
+			"enabled": true
+		},
+		{
+			"key": "UL-Service",
+			"value": "ul",
+			"enabled": true
+		},
+		{
+			"key": "UL-HTTP-APIKey",
+			"value": "ulhttkey",
+			"enabled": true
+		},
+		{
+			"key": "UL-HTTP-DeviceID",
+			"value": "UL-HTTP-Device",
+			"enabled": true
+		},
+		{
+			"key": "UL-MQTT-APIKey",
+			"value": "ulmqttkey",
+			"enabled": true
+		},
+		{
+			"key": "UL-MQTT-DeviceID",
+			"value": "UL-MQTT-Device",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2019-05-27T16:46:01.267Z",
+	"_postman_exported_using": "Postman/7.0.9"
+}

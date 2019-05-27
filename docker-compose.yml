@@ -1,0 +1,115 @@
+version: "3.2"
+
+services:
+    json-agent:
+        depends_on:
+            - json-mosquitto
+            - json-orion
+        image: fiware/iotagent-json:latest
+        logging:
+            options:
+                max-size: 1m
+        networks:
+            - iot-ready
+        restart: unless-stopped
+        volumes:
+            - "./json.js:/opt/iotajson/config.js"
+
+    json-mosquitto:
+        image: eclipse-mosquitto:1.5
+        logging:
+            options:
+                max-size: 1m
+        networks:
+            iot-ready:
+                aliases:
+                    - json-mosquitto
+        restart: unless-stopped
+        volumes:
+            - "./json-mosquitto.conf:/mosquitto/config/mosquitto.conf"
+            - "/opt/data/json/:/mosquitto/data"
+
+    json-orion:
+        command: -dbhost mongo -db o-json -logLevel ERROR
+        image: fiware/orion:2.2.0
+        logging:
+            options:
+                max-size: 1m
+        networks:
+            - iot-ready
+        restart: unless-stopped
+
+    mongo:
+        image: mongo:3.6
+        restart: unless-stopped
+        networks:
+            - iot-ready
+        logging:
+            options:
+                max-size: 1m
+        volumes:
+            - "/opt/data/mongo/:/data/db/"
+
+    nginx:
+        depends_on:
+            - ul-agent
+            - ul-orion
+            - json-agent
+            - json-orion
+        image: nginx:alpine
+        logging:
+            options:
+                max-size: 1m
+        networks:
+            - iot-ready
+        ports:
+            - "21026:21026"
+            - "24061:24061"
+            - "27896:27896"
+            - "27898:27898"
+            - "27897:27897"
+        restart: unless-stopped
+        volumes:
+            - "./conf.http.d:/etc/nginx/conf.http.d"
+            - "./nginx.conf:/etc/nginx/nginx.conf"
+            - "/opt/data/nginx/:/var/log/nginx/"
+
+    ul-agent:
+        depends_on:
+            - ul-mosquitto
+            - ul-orion
+        image: fiware/iotagent-ul:latest
+        logging:
+            options:
+                max-size: 1m
+        networks:
+            - iot-ready
+        restart: unless-stopped
+        volumes:
+            - "./ul.js:/opt/iotaul/config.js"
+
+    ul-mosquitto:
+        image: eclipse-mosquitto:1.5
+        logging:
+            options:
+                max-size: 1m
+        networks:
+            - iot-ready
+        restart: unless-stopped
+        volumes:
+            - "./ul-mosquitto.conf:/mosquitto/config/mosquitto.conf"
+            - "/opt/data/ul/:/mosquitto/data"
+
+    ul-orion:
+        command: -dbhost mongo -db o-ul -logLevel ERROR
+        image: fiware/orion:2.2.0
+        logging:
+            options:
+                max-size: 1m
+        networks:
+            - iot-ready
+        restart: unless-stopped
+
+networks:
+    iot-ready:
+        external: true

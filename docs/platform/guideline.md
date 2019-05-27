@@ -1,4 +1,0 @@
-# Guideline
-
-Platform
-
