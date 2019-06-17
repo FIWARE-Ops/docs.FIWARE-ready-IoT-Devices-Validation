@@ -1,27 +1,3 @@
-# How to apply
-
-1.  Read the reference guide, which will help you to apply and perform the different tests needed to evaluate your
-    solution.
-2.  If it is needed, set up the validation environment.
-3.  Execute tests according to the test workflow using the appropriate public instances or using your own deployed
-    instance.
-4.  Fill in the
-    [**FIWARE-ready** IoT Device Manual Template](https://docs.google.com/document/d/1Ur9JG2rzSsImVJpmz05aXXv2exRvmCvGgRo869mjWaw/edit?usp=sharing)
-    with the information about how to use your component within FIWARE ecosystem.
-5.  Go to `http://marketplace.fiware.org/apply`. Register, and then apply by providing all your company information.
-    Then, under the **solution/service** section, choose **FIWARE-ready IoT Device** under **category** and a proper
-    domain of application.
-6.  You might be asked to provide extra information or to have an interview with **FIWARE-ready** IoT Device reviewers
-    who might require extra information about your solution or even a real-time simulation of the entire process so that
-    they can take an objective validation decision.
-7.  **FIWARE-ready** IoT Device reviewers will evaluate the documentation provided and any hardware provided will
-    perform themselves the tests.
-
-In the event that your application is correct and satisfies all the requirements, congratulations you are now part of
-the FIWARE Marketplace! The product will be updated to the **FIWARE-ready** IoT Devices list of commercially available
-products. As a result of the validation process, an official document signed by FIWARE will acredite the result of this
-process together with a document with the results obtained during the process
-
 # FIWARE IoT platform
 
 Regarding IoT, the FIWARE platform offers two major software components:
@@ -61,7 +37,6 @@ Agent to cover any other possible IoT Standard not covered by the existing enabl
 
 New IoT Agents are being added over time, and the current supported set of protocols can be found within the
 [FIWARE Catalogue](https://github.com/Fiware/catalogue/tree/master/iot-agents)
-
 
 # Test Scenarios
 
@@ -698,3 +673,21 @@ curl -s -X GET \
     }
 ]
 ```
+
+## Guideline for validators
+
+In order to proceed with the validation of a FIWARE-Ready IoT device validators must follow these steps:
+
+1. Check the information provided by the applicants. There must be at least a filled-in manual template.
+2. Check that this template explains all the necessary steps to work with FIWARE generic enablers.
+3. Check that the applicants have performed the required steps.
+4. Check the logs, IoT Agent information and Orion Context Broker entries to confirm that those steps were performed.
+5. If there is no evidence that the actions were simulated and overall process looks logical, that means that the
+   validation has passed successfully. If not, ask to provide more details.
+
+### Possible infrastructure.
+
+Infrastructure should provide a possibility to check the connectivity with IoT Agents and message brokers. All endpoints
+can be proxied by NGINX, since its log contains enough information about all TCP and HTTP connections. Sample
+docker-compose file with a part of the required infrastructure, as well as instructions and variables for Postman
+recipes prepared for applicants’ guideline are located at https://github.com/FIWARE-Ops/Marketplace/tree/validators.

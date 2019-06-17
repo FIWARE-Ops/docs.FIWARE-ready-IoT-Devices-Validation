@@ -22,3 +22,19 @@ devices will be part of the [FIWARE Marketplace](https://marketplace.fiware.org/
 that gives visibility to a wide range of _"Powered by FIWARE"_ solutions and platforms, _"FIWARE-Ready"_ technologies as
 well as FIWARE related training/coaching or consultancy, integration and support services. The **FIWARE Marketplace**
 serves the purpose of globally disseminating existing commercial offerings across the FIWARE ecosystem.
+
+## How to apply
+
+Currently activities within the marketplace are filtered into six separate catagories. The criteria to be registered
+under each section varies accordingly - check the details in the subsections below.
+
+-   [Powered by FIWARE solution](solution/apply.md)
+-   [Powered by FIWARE platform](platform/apply.md)
+-   [FIWARE-Ready IoT device](device/apply.md)
+-   [FIWARE-Ready software enablers](enabler/apply.md)
+-   [FIWARE Consulting, Integration and Technical Support Services](consulting/apply.md)
+-   [FIWARE Training and Coaching Service](training/apply.md)
+
+This document includes advice for applicants as well as procedures to be used by validators. A full understanding of how
+the the validation process works can help smooth the process to get your FIWARE solution or device to be accredited
+correctly.
