@@ -10,21 +10,21 @@ extra_css: ['https://fiware.org/style/fiware_readthedocs.css', 'https://fiware.o
 
 pages:
   - Home: index.md
-  - Powered by FIWARE solution:
+  - Powered by FIWARE Solution:
       - 'How to Apply': solution/apply.md
-      - 'Guideline': solution/guideline.md
-  - Powered by FIWARE platform:
+      - 'Guidelines': solution/guideline.md
+  - Powered by FIWARE Platform:
       - 'How to Apply': platform/apply.md
-      - 'Guideline': platform/guideline.md
-  - FIWARE-Ready IoT device:
+      - 'Guidelines': platform/guideline.md
+  - FIWARE-Ready IoT Device:
       - 'How to Apply': 'device/apply.md'
-      - 'Guideline': 'device/guideline.md'
-  - FIWARE-Ready software enabler:
+      - 'Guidelines': 'device/guideline.md'
+  - FIWARE-Ready Software Enabler:
       - 'How to Apply': 'enabler/apply.md'
-      - 'Guideline': 'enabler/guideline.md'
+      - 'Guidelines': 'enabler/guideline.md'
   - FIWARE Consulting, Integration and Technical Support Service:
       - 'How to Apply': 'consulting/apply.md'
-      - 'Guideline': 'consulting/guideline.md'
+      - 'Guidelines': 'consulting/guideline.md'
   - FIWARE Training and Coaching Service:
       - 'How to Apply': 'training/apply.md'
-      - 'Guideline': 'training/guideline.md'
+      - 'Guidelines': 'training/guideline.md'

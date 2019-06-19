@@ -118,10 +118,10 @@ Once that you finish with the process to introduce the data, you can submit the 
 _"FIWARE-Ready"_ IoT Device Program reviewers will evaluate the provided documentation and contact with you in case any
 clarification is required. The result of this evaluation will be a Test Report that will be published in the marketplace
 application page. Once the evaluation is finished, you have successfully completed the _"FIWARE-Ready"_ IoT Device
-Program, and your device will be published on the list of _"FIWARE-Ready"_ IoT Devices commercial devices available at
-[FIWARE Marketplace](​http://marketplace.fiware.org)​. Once the product is validated you will also be able to publish in
-your own web the program logo and specific instructions to connect your product to FIWARE ecosystems (based on a
-template we will provide as well).
+Program, and your device will be published on the list of _"FIWARE-Ready"_ IoT Devices commercial devices available in
+the **FIWARE Marketplace** :`https://marketplace.fiware.org/pages/devices`. Once the product is validated you will also
+be able to publish in your own web the program logo and specific instructions to connect your product to FIWARE
+ecosystems (based on a template we will provide as well).
 
 # Public testing infrastructure
 

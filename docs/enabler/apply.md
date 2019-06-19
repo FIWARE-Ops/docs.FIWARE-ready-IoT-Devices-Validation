@@ -13,14 +13,14 @@ FIWARE allows to build more sophisticated applications.
     and FIWARE NGSI.
 
 2.  Go to `http://marketplace.fiware.org/apply`. Register. Then choose “FIWARE-ready - Software enabler” under
-    “category” and one or more proper domains for your product or system.
+    **category** and one or more proper domains for your product or system.
 
-3.  Fill up the rest of fields with as many information as possible so that evaluators can grant your application
+3.  Fill up the rest of fields with as much information as possible so that evaluators can grant your application
     smoothly. An important and mandatory part will be one or more manuals that will describe how to connect your
     technology and one or more FIWARE enablers.
 
-4.  You might be asked to provide extra information or to have an interview with FIWARE Experts who might require extra
+4.  You may be asked to provide extra information or to have an interview with FIWARE Experts who might require extra
     information about your solution, so that they can make an informed decision.
 
 5.  In the event that your application is correct and satisfies all the requirements, congratulations you are now part
-    of the FIWARE marketplace!.
+    of the FIWARE marketplace.
