@@ -19,6 +19,7 @@ pages:
   - FIWARE-Ready IoT Device:
       - 'How to Apply': 'device/apply.md'
       - 'Guidelines': 'device/guideline.md'
+      - 'Test Scenarios': 'device/test-scenarios.md'
   - FIWARE-Ready Software Enabler:
       - 'How to Apply': 'enabler/apply.md'
       - 'Guidelines': 'enabler/guideline.md'
