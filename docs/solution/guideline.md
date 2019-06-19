@@ -48,7 +48,9 @@ In order to proceed with the validation of a _"Powered by FIWARE"_ Solution vali
 3. Revise the supplied data models (as per the documentation or schemas provided) of the application and try to respond
    to the following questions:
 
-    - a) Are the application data models suitable to be used with FIWARE NGSI?
+    - a) Are the application data models suitable to be used with FIWARE NGSI? Usually data entities should correspond
+      to some concrete object with a state found the real world. Events or tickets make very poor candidates for data
+      entities.
     - b) Are the application data models compatible with the FIWARE Data Models? An application data model is compatible
       if it can be mapped to an existing FIWARE Data Model (through an ETL) or if it is just an extension of an existing
       FIWARE Data Model.

@@ -35,7 +35,7 @@ that gives visibility to a wide range of _"Powered by FIWARE"_ solutions and pla
 well as FIWARE related training/coaching or consultancy, integration and support services. The **FIWARE Marketplace**
 serves the purpose of globally disseminating existing commercial offerings across the FIWARE ecosystem.
 
-## How to apply
+#### How to apply
 
 Currently activities within the marketplace are filtered into six separate categories. The criteria to be registered
 under each section varies accordingly - check the details in the subsections below.
