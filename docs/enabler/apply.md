@@ -26,7 +26,7 @@ offer an off-the-shelf connector between your platform and FIWARE NGSI to set th
     common data models are used, they can be referred to by name.
 
 4.  Describe which NGSI operations are offered by the component, and provide working examples (e.g. cUrl or Postman).
-    For example, if an enabler can offer data via a registration, provide a working URL where such data maybe receieved.
+    For example, if an enabler can offer data via a registration, provide a working URL where such data may be received.
 
 5.  You may be asked to provide extra information or to have an interview with FIWARE Experts who might require extra
     information about your solution, so that they can make an informed decision.
