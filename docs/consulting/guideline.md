@@ -28,4 +28,4 @@ In order to proceed with the validation of a FIWARE Training Provider, validator
     determine sufficient understanding. Note that some consultants may be offering services outside of the FIWARE
     catalogue or be concentrating on aspects such as deployment so not all sections will be relevant.
 
-5) If evaluators cannot find enough evidence for point 2 or either 3 or 4 then the application must be rejected.
+5.  If evaluators cannot find enough evidence for point 2 or either 3 or 4 then the application must be rejected.
