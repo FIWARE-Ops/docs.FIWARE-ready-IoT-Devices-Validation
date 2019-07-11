@@ -18,8 +18,10 @@ FIWARE also offers extra connectors (_Cygnus_, _STH-Comet_, _QuantumLeap_, _Drac
 term or longer term historical information and storing it in different datastores, such as HDFS, MongoDB or
 Elasticsearch (CrateDB). Thereafter Big Data Processing or Machine Learning algorithms can be used to performed further
 insights, predictions or other advanced analytics.. Further information for developers can be found on
-[fiware.org](https://www.fiware.org/developers). Similarly, the catalogue of open-source FIWARE standard components can
-be found on [GitHub](https://www.fiware.org/developers/catalogue)
+[fiware.org](https://www.fiware.org/developers). Similarly, a catalogue of and **open-source FIWARE** standard
+components can be found on [GitHub](https://github.com/FIWARE/catalogue). Furthermore a list of FIWARE compatible
+**commercial solutions** (such as _FIWARE-Ready_ devices and enablers) can be found within the
+[FIWARE Marketplace](https://marketplace.fiware.org)
 
 An example of a smart solution, would be one intended to optimize waste collection service in a city. The service would
 gather context data (filling levels) from IoT devices attached to waste containers. IoT Devices will send measurements
@@ -49,19 +51,21 @@ In order to proceed with the validation of a _"Powered by FIWARE"_ Solution vali
    to the following questions:
 
     - a) Are the application data models suitable to be used with FIWARE NGSI? Usually data entities should correspond
-      to some concrete object with a state found the real world. Events or tickets make very poor candidates for data
-      entities.
+      to some concrete object with a state found the real world. For example, events or tickets make very poor
+      candidates for data entities since they are by definition transient entities. Ideally transient entities should be
+      defined and used in data models only and only used as a last resort where necessary (e.g. a raw data source for
+      further CEP which in turn changes the state of a real concrete data entity).
     - b) Are the application data models compatible with the FIWARE Data Models? An application data model is compatible
       if it can be mapped to an existing FIWARE Data Model (through an ETL) or if it is just an extension of an existing
       FIWARE Data Model.
 
 4. From the documentation provided, there must be clear evidence to infer affirmative responses to all the questions
-   under points 2 and 3 (either a. or b.). Note that common data models must be used where they exist, but are not
-   mandatory for novel use-cases where a common data model has not yet been created. In the later case, for the new data
-   model or additional attributes for an existing data model should be extending common vocabulary where possible and
-   follow the usual rules for data models (e.g attributes in English, camel case etc.). For common future use, in the
-   ideal case the candidate should be encouraged to submit a new common data model or add additional fields as
-   necessary.
+   under points 2 and 3 (either a. or b.). Note that there is a **strong recommendation** that common data models should
+   be used where they exist, but are not mandatory for novel use-cases where a common data model has not yet been
+   created. In the later case, for the new data model or additional attributes for an existing data model should be
+   extending common vocabulary where possible and follow the usual rules for data models (e.g attributes in English,
+   camel case etc.). For common future use, in the ideal case the candidate should be encouraged to submit a new common
+   data model or add additional fields as necessary.
 
     If there is no clear evidence that an end-to-end solution exists, then evaluators must call for an interview, so
     that the applicant can provide extra evidence to pass points 2 and 3. Extra evidence could be provided by giving
