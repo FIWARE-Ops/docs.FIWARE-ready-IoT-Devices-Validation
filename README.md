@@ -2,12 +2,12 @@
 
 # FIWARE Ready IoT Device Validation
 
-[![Documentation](https://nexus.lab.fiware.org/repository/raw/public/badges/chapters/documentation.svg)](https://fiware-marketplace.rtfd.io)
+[![Documentation](https://nexus.lab.fiware.org/repository/raw/public/badges/chapters/documentation.svg)](https://fiware-marketplace.readthedocs.io)
 [![License: CC-BY-4.0](https://img.shields.io/github/license/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![fiware](https://nexus.lab.fiware.org/repository/raw/public/badges/stackoverflow/fiware.svg)](https://stackoverflow.com/questions/tagged/fiware)
 <br/>
-[![Documentation](https://img.shields.io/readthedocs/fiware-ready-iot-devices-validation.svg)](https://fiware-marketplace.rtfd.io)
-[![Build Status](https://img.shields.io/travis/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation.svg)](https://travis-ci.org/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation)
+[![Documentation](https://img.shields.io/readthedocs/fiware-marketplace.svg)](https://fiware-marketplace.readthedocs.io)
+[![Build Status](https://img.shields.io/travis/FIWARE-Ops/Marketplace.svg)](https://travis-ci.org/FIWARE-Ops/Marketplace)
 
 This documentation describes the process to apply and validate an IoT Device as FIWARE Ready.
 
@@ -27,8 +27,8 @@ device is connecting with the public instance correctly. Once you have successfu
 device program, your device will be published on the _"FIWARE-Ready"_ IoT devices section of the
 [FIWARE Marketplace](https://marketplace.fiware.org/pages/devices).
 
-| :books: [Documentation](https://fiware-marketplace.rtfd.io) |
-| ----------------------------------------------------------- |
+| :books: [Documentation](https://fiware-marketplace.readthedocs.io) |
+| ------------------------------------------------------------------ |
 
 
 ## Background
