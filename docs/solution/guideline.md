@@ -63,9 +63,10 @@ In order to proceed with the validation of a _"Powered by FIWARE"_ Solution vali
    under points 2 and 3 (either a. or b.). Note that there is a **strong recommendation** that common data models should
    be used where they exist, but are not mandatory for novel use-cases where a common data model has not yet been
    created. In the later case, for the new data model or additional attributes for an existing data model should be
-   extending common vocabulary where possible and follow the usual rules for data models (e.g attributes in English,
-   camel case etc.). For common future use, in the ideal case the candidate should be encouraged to submit a new common
-   data model or add additional fields as necessary.
+   extending common vocabulary where possible and follow the usual
+   [rules for data models](https://fiware-datamodels.readthedocs.io/en/latest/guidelines/index.html) (e.g attributes in
+   English, camel case etc.). For common future use, in the ideal case, the applicant should be encouraged to submit a
+   new common FIWARE data model or add additional fields as necessary.
 
     If there is no clear evidence that an end-to-end solution exists, then evaluators must call for an interview, so
     that the applicant can provide extra evidence to pass points 2 and 3. Extra evidence could be provided by giving

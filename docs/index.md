@@ -1,58 +1,63 @@
 [![Documentation](https://nexus.lab.fiware.org/repository/raw/public/badges/chapters/documentation.svg)](https://fiware-tutorials.rtfd.io)
 [![Support badge](https://nexus.lab.fiware.org/repository/raw/public/badges/stackoverflow/fiware.svg)](https://stackoverflow.com/questions/tagged/fiware)
 
-# About the program
+# About the FIWARE Marketplace
 
-FIWARE **NGSI** is a universal standard for context data management used to facilitate the development of Smart
-Solutions. The FIWARE ecosystem means a straight-forward business opportunity for IoT products - It is simple, any
-device which is capable of directly or indirectly communicating using the NSGI protocol can be plugged into literally
-any FIWARE-based smart solution. This eliminates vendor lock-in and allows new entrants to the IoT device market to
-ensure their compatibility with existing solutions apriori.
+The [FIWARE Marketplace](https://marketplace.fiware.org) serves the purpose of globally disseminating existing
+commercial offerings around FIWARE. It is a global one-stop shop that gives visibility to a wide range of Powered by
+FIWARE solutions/platforms, FIWARE-ready solutions and IoT devices as well as FIWARE related training/coaching or
+consultancy, integration and support services. Entries in the FIWARE Marketplace have been validated by the FIWARE
+Foundation or FIWARE iHubs which meet the requirements for performing validation of FIWARE Marketplace entries.
 
 #### Powered by FIWARE
 
-To be a _"Powered by FIWARE"_ solution, a solution must be based on context data and integrated around a context broker.
-Smart solutions _"powered by FIWARE"_ can easily integrate new IoT devices, and can leverage the existing FIWARE
-open-source [components](https://github.com/fiware/catalogue) to communicate with those devices via existing well-known
-IoT protocols.
+The architecture of any _"powered by FIWARE"_ solution/platform gravitates around the management of context data through
+a Context Broker component, using FIWARE NGSI as the core integration API. Smart solutions/platforms _"powered by
+FIWARE"_ can easily integrate _"FIWARE-ready"_ solutions following a “system of systems” approach as well as
+_"FIWARE-ready"_ IoT devices and leverage the other open-source components found in the
+[FIWARE Catalogue](https://github.com/fiware/catalogue) for rapid development.
 
 #### FIWARE Ready
 
-So far, developers needed to search compatible IoT products and find out how to make them work. The certification of
-_"FIWARE-Ready"_ IoT devices provides the answer, as it is designed to demonstrate the ability of the IoT solutions to
-seamlessly interoperate with FIWARE platforms. To be _"FIWARE-Ready"_, a device must be able to retrieve and respond to
-messages in the NSGI format.
+Solutions or devices which implement a FIWARE NSGI interface but whose architecture is not _“powered by FIWARE”_ are
+able to provide and consume context information, and are referred to as _“FIWARE-ready”_. The ability for a Solution or
+an IoT device to be _"FIWARE-ready"_ can be supplied via the use of intermediate services such as an IoT Agent which can
+be used to translate proprietary message formats and transport protocols to NGSI. FIWARE brings open source libraries
+for development of IoT Agents as well as a portfolio of common IoT Agents which can be used to translate from most
+popular IoT protocols to NGSI and vice-versa.
 
-The ability for an IoT device to be _"FIWARE-Ready"_ can be supplied either **directly** - with software on the device
-or **indirectly** - via the use of intermediate services such as an IoT Agent which can be used to translate proprietary
-message formats and transport protocols to NGSI.
+In summary, the ability for an IoT device to be _"FIWARE-Ready"_ can be supplied either **directly** - with software on
+the device or **indirectly** - via the use of intermediate services such as an IoT Agent which can be used to translate
+proprietary message formats and transport protocols to NGSI.
 
-## FIWARE Marketplace
+#### Marketplace Categories
 
-The database of products and developers that have successfully been featured and certified as _"FIWARE-Ready"_ IoT
-devices will be part of the [FIWARE Marketplace](https://marketplace.fiware.org/pages/devices), a global one-stop shop
-that gives visibility to a wide range of _"Powered by FIWARE"_ solutions and platforms, _"FIWARE-Ready"_ technologies as
-well as FIWARE related training/coaching or consultancy, integration and support services. The **FIWARE Marketplace**
-serves the purpose of globally disseminating existing commercial offerings across the FIWARE ecosystem.
+Currently entries within the marketplace are classified into six separate categories. The criteria for a given offering
+to be registered under each categories varies accordingly - check the details in the subsections below.
 
-#### How to apply
+-   [_"Powered by FIWARE"_ Solution](solution/apply.md) - a full end-to-end solution whose architecture gravitates
+    around management of context data through a context broker using FIWARE NGSI as core integration API. They may
+    gather context data from quite heterogeneous sources and perform processing and visualization of context data to
+    bring support to the smart automation of certain process and/or the adoption of smart decisions by end users.
+-   [_"Powered by FIWARE"_ Platform](platform/apply.md) - A software platform integrating a set of FIWARE components,
+    and potentially other platform components, that brings support to the development and run-time execution of “Powered
+    by FIWARE” solutions. A FIWARE-compliant Context Broker is the core component of any _“Powered by FIWARE”_ platform
+    and FIWARE NGSI its core integration API. They can be provided from public/private clouds or at the premises of the
+    platform users.
 
-Currently activities within the marketplace are filtered into six separate categories. The criteria to be registered
-under each section varies accordingly - check the details in the subsections below.
-
--   [_"Powered by FIWARE"_ Solution](solution/apply.md) - a full end-to-end solution based on context data and
-    integrated around a context broker.
--   [_"Powered by FIWARE"_ Platform](platform/apply.md) - a cloud-based environment for hosting and automatic deployment
-    of _"Powered by FIWARE"_ Solutions.
--   [_"FIWARE-Ready"_ IoT Device](device/apply.md) - a class of IoT devices which are able to send and respond to
-    messages in the NSGI format, either directly or indirectly via the use of an IoT Agent which can translate
-    proprietary message formats and transport protocols.
--   [_"FIWARE-Ready"_ Software Enablers](enabler/apply.md) - software supporting the NGSI interfaces which is able to
-    interact with the context broker
--   [FIWARE Consulting, Integration and Technical Support Services](consulting/apply.md) - technical support services
-    for deploying and maintaining FIWARE solutions in the field.
--   [FIWARE Training and Coaching Service](training/apply.md) - training and coaching on how to use FIWARE.
+-   [_"FIWARE-Ready"_ IoT Device](device/apply.md) - a concrete IoT device which is able to send and respond to messages
+    using FIWARE NGSI, either natively or indirectly via the use of an IoT Agent which can translate the native IoT
+    message format and transport protocol, proprietary or not, supported by the device.
+-   [_"FIWARE-Ready"_ Solution](enabler/apply.md) - A software system whose architecture is not _“Powered by FIWARE”_
+    but is able to exchange messages with a _“Powered by FIWARE”_ solution/platform using FIWARE NGSI. They may be full
+    end-to-end solutions which can be integrated as part of a larger _“Powered by FIWARE”_ solution following a “system
+    of systems” approach. They may also be base software platform components or enablers which can be integrated as part
+    of a _“Powered by FIWARE”_ platform to extend its capabilities. _“FIWARE-ready”_ solutions don’t need to be open
+    source.
+-   [FIWARE Consulting, Integration and Technical Support Services](consulting/apply.md) - Technical support services
+    for deploying and maintaining FIWARE solutions in the field offered by a given company or consortium of companies.
+-   [FIWARE Training and Coaching Service](training/apply.md) - Training and coaching services on how to use FIWARE
+    offered by a given company or consortium of companies.
 
 This document includes advice for applicants as well as procedures to be used by validators. A full understanding of how
-the validation process works can help smooth the process to get your FIWARE solution or device to be accredited
-correctly.
+the validation process works can help smooth the process to get your offering to be validated correctly.
