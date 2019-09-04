@@ -1,4 +1,4 @@
-[![Documentation](https://nexus.lab.fiware.org/repository/raw/public/badges/chapters/documentation.svg)](https://fiware-tutorials.rtfd.io)
+[![Documentation](https://nexus.lab.fiware.org/repository/raw/public/badges/chapters/documentation.svg)](https://fiware-marketplace.readthedocs.io)
 [![Support badge](https://nexus.lab.fiware.org/repository/raw/public/badges/stackoverflow/fiware.svg)](https://stackoverflow.com/questions/tagged/fiware)
 
 # About the FIWARE Marketplace
@@ -40,7 +40,7 @@ to be registered under each categories varies accordingly - check the details in
     gather context data from quite heterogeneous sources and perform processing and visualization of context data to
     bring support to the smart automation of certain process and/or the adoption of smart decisions by end users.
 -   [_"Powered by FIWARE"_ Platform](platform/apply.md) - A software platform integrating a set of FIWARE components,
-    and potentially other platform components, that brings support to the development and run-time execution of “Powered
+    and potentially other platform components, that brings support to the development and runtime execution of “Powered
     by FIWARE” solutions. A FIWARE-compliant Context Broker is the core component of any _“Powered by FIWARE”_ platform
     and FIWARE NGSI its core integration API. They can be provided from public/private clouds or at the premises of the
     platform users.

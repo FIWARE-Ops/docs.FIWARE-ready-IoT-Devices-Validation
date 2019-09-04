@@ -30,7 +30,7 @@ providers of context information. Likewise, a route optimization service (contex
 information to optimize picking up routes so that only those containers fully filled will be visited. A city dashboard
 could also act as context data consumer offering a visualization solution, so that city officials can follow, in real
 time, the status of containers or even vehicles dedicated to waste collection. For providing and consuming context data,
-applications will make use of the FIWARE NGSI standard APIs. Last but not least, historical data could be generated
+applications will make use of the FIWARE NGSI standard APIs. Furthermore, historical data could be generated
 using _Cygnus_ or _Draco_ and stored on a Big Data system so that analytics can be performed.
 
 ## Guideline for validators
