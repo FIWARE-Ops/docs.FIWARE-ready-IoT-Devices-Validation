@@ -7,7 +7,7 @@ The [FIWARE Marketplace](https://marketplace.fiware.org) serves the purpose of g
 commercial offerings around FIWARE. It is a global one-stop shop that gives visibility to a wide range of Powered by
 FIWARE solutions/platforms, FIWARE-ready solutions and IoT devices as well as FIWARE related training/coaching or
 consultancy, integration and support services. Entries in the FIWARE Marketplace have been validated by the FIWARE
-Foundation or FIWARE iHubs which meet the requirements for performing validation of FIWARE Marketplace entries
+Foundation or FIWARE iHubs which meet the requirements for performing validation of FIWARE Marketplace entries.
 
 #### Powered by FIWARE
 
