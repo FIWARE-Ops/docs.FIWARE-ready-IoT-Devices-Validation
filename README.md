@@ -7,7 +7,7 @@
 [![fiware](https://nexus.lab.fiware.org/repository/raw/public/badges/stackoverflow/fiware.svg)](https://stackoverflow.com/questions/tagged/fiware)
 <br/>
 [![Documentation](https://img.shields.io/readthedocs/fiware-marketplace.svg)](https://fiware-marketplace.readthedocs.io)
-[![Build Status](https://img.shields.io/travis/FIWARE-Ops/Marketplace.svg)](https://travis-ci.org/FIWARE-Ops/Marketplace)
+[![CI](https://github.com/FIWARE-Ops/Marketplace/workflows/CI/badge.svg)](https://github.com/FIWARE-Ops/Marketplace/actions?query=workflow%3ACI)
 
 This documentation describes the process to apply and validate an IoT Device as FIWARE Ready.
 
