@@ -1,6 +1,4 @@
-![FIWARE](https://fiware.github.io/specifications/img/fiware.png)
-
-# FIWARE Ready IoT Device Validation
+# Ready IoT Device Validation<img src="https://fiware.github.io//catalogue/img/fiware-black.png" width="145" align="left"> 
 
 [![Documentation](https://nexus.lab.fiware.org/repository/raw/public/badges/chapters/documentation.svg)](https://fiware-marketplace.readthedocs.io)
 [![License: CC-BY-4.0](https://img.shields.io/github/license/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation.svg)](https://creativecommons.org/licenses/by/4.0/)
@@ -27,8 +25,8 @@ device is connecting with the public instance correctly. Once you have successfu
 device program, your device will be published on the _"FIWARE-Ready"_ IoT devices section of the
 [FIWARE Marketplace](https://marketplace.fiware.org/pages/devices).
 
-| :books: [Documentation](https://fiware-marketplace.readthedocs.io) |
-| ------------------------------------------------------------------ |
+ |  <img src="https://fiware.github.io/catalogue/img/fiware-emoji.png" height="20px" width="20px"/><br/> [marketplace.&ZeroWidthSpace;fiware.org](https://marketplace.fiware.org/) | :books: <br/>[Documentation](https://fiware-marketplace.readthedocs.io) |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------ |
 
 
 ## Background
