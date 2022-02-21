@@ -1,7 +1,7 @@
 {
 	"name": "fiware-ready-iot-devices-validation",
 	"version": "1.0.0",
-	"description": "Video tutorials, slide decks and other training materials for developers learning about the FIWARE ecosystem.",
+	"description": "The process for commercial software to apply as 'powered by FIWARE' or 'FIWARE-Ready'",
 	"keywords": [
 		"fiware ready",
 		"fiware",
@@ -15,42 +15,47 @@
 		"type": "git",
 		"url": "https://github.com/fiware-ops/Marketplace"
 	},
+	"homepage": "https://fiware-marketplace.readthedocs.io/",
 	"devDependencies": {
-		"eslint": "^5.6.0",
-		"eslint-config-tamia": "^6.0.1",
-		"eslint-plugin-prettier": "^3.0.0",
-		"husky": "^1.1.0",
-		"lint-staged": "^7.3.0",
-		"memfs": "2.10.1",
-		"prettier": "^1.14.2",
-		"remark-cli": "^6.0.1",
-		"remark-preset-lint-recommended": "^3.0.2",
-		"textlint": "^11.0.1",
+		"eslint": "^8.9.0",
+		"eslint-config-tamia": "^7.2.7",
+		"eslint-plugin-prettier": "^4.0.0",
+		"husky": "^7.0.4",
+		"lint-staged": "^12.3.4",
+		"memfs": "3.4.1",
+		"prettier": "^2.5.1",
+		"remark-cli": "^10.0.1",
+		"remark-preset-lint-recommended": "^6.1.2",
+		"textlint": "^12.1.0",
 		"textlint-filter-rule-comments": "^1.2.2",
 		"textlint-rule-common-misspellings": "^1.0.1",
-		"textlint-rule-no-dead-link": "^4.4.1",
-		"textlint-rule-terminology": "^1.1.29",
-		"textlint-rule-write-good": "^1.6.2"
+		"textlint-rule-no-dead-link": "^4.8.0",
+		"textlint-rule-terminology": "^2.1.5",
+		"textlint-rule-write-good": "^2.0.0"
 	},
 	"engines": {
-		"node": ">=8.6"
+		"node": ">=16"
 	},
 	"scripts": {
 		"start": "mkdocs serve",
-		"precommit": "lint-staged",
+		"pre-commit": "lint-staged",
 		"lint:text": "textlint  'README.md' 'docs/*.md'  'docs/**/*.md'",
 		"lint:md": "remark 'README.md' 'docs'",
-		"prettier:text": "prettier 'README.md' 'docs/*.md'  'docs/**/*.md' --no-config --tab-width 4 --print-width 120 --write --prose-wrap always"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
+		"prettier:text": "prettier 'README.md' 'docs/*.md'  'docs/**/*.md' --no-config --tab-width 4 --print-width 120 --write --prose-wrap always",
+		"prepare": "husky install"
 	},
 	"lint-staged": {
 		"*.md": [
-			"prettier  --no-config --tab-width 4 --print-width 120 --write --prose-wrap always",
-			"git add"
+			"prettier  --no-config --tab-width 4 --print-width 120 --write --prose-wrap always"
+		]
+	},
+	"remarkConfig": {
+		"settings": {
+			"bullet": "-",
+			"paddedTable": true
+		},
+		"plugins": [
+			"remark-preset-lint-recommended"
 		]
 	}
 }
