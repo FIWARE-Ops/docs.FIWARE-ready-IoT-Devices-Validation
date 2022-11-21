@@ -94,7 +94,7 @@ Program reviewers [IoTReady@lists.fiware.org​](mailto:I​oTReady@lists.fiware
 
 <h3>Fill in the information of your product into the marketplace</h3>
 
-You can go to the marketplace and select [Apply](http://marketplace.fiware.org/apply) to upload a new component to be
+You can go to the marketplace and select [Apply](https://www.fiware.org/marketplace/submit-your-product) to upload a new component to be
 validated. It goes to the ​ web page in which you can select **Start a new application**.
 
 ![](../img/02.png)

@@ -3,7 +3,7 @@
 Finding the right experts offering consultancy, integration or technical support services is crucial in many projects.
 The FIWARE marketplace is helping to serve this need.
 
-1.  Go to `http://marketplace.fiware.org/apply`, fill out the registration form, then under the **solution/service**
+1.  Go to `https://www.fiware.org/marketplace/submit-your-product`, fill out the registration form, then under the **solution/service**
     section, select **FIWARE Services - Consultancy, integration & tech support** under **category**.
 
 2.  Fill up the form by providing all the required fields, particularly a detailed description of the services offered

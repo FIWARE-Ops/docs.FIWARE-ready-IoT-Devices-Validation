@@ -13,7 +13,7 @@ and one or more FIWARE enablers. In most cases this would be done using one or m
 For instance, if you are providing advanced visualization capabilities for context information, then you would need to
 offer an off-the-shelf connector between your platform and FIWARE NGSI to set the context.
 
-1.  Go to `http://marketplace.fiware.org/apply`, fill out the registration form, then choose **FIWARE-ready - Software
+1.  Go to `https://www.fiware.org/marketplace/submit-your-product`, fill out the registration form, then choose **FIWARE-ready - Software
     enabler** under **category** and one or more proper sub-categories for your product or system.
 
 2.  Fill up the rest of fields with as much information as possible so that evaluators can grant your application

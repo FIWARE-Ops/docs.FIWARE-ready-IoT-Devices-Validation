@@ -3,7 +3,7 @@
 Online training material is available on the [FIWARE Academy](https://fiware-academy.readthedocs.io) but many partners
 are offering tailored training and coaching services to those organizations who are looking for dedicated sessions.
 
-1.  Go to `http://marketplace.fiware.org/apply`, fill out the registration form, then under the **solution/service**
+1.  Go to `https://www.fiware.org/marketplace/submit-your-product`, fill out the registration form, then under the **solution/service**
     section, select **FIWARE Services - Training & Coaching** under **category**.
 
 2.  Fill up the form by providing all the required fields, particularly a detailed description of the services offered

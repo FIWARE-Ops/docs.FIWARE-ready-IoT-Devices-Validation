@@ -16,7 +16,7 @@ by FIWARE"_ or not. So please read carefully the description provided as a [guid
 > using another category when applying, for instance as a _"FIWARE-Ready"_ devices. If you are not sure, you can always
 > ask for help so that FIWARE experts can give you some advice.
 
-1. Go to `http://marketplace.fiware.org/apply`, fill out the registration form, apply by providing all your company
+1. Go to `https://www.fiware.org/marketplace/submit-your-product`, fill out the registration form, apply by providing all your company
    information. Then, under the **solution/service** section, choose **"Powered by FIWARE" solution** under **category**
    and a proper domain of application.
 
