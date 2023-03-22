@@ -1,7 +1,7 @@
-site_name: FIWARE Marketplace
+site_name: FIWARE Marketplace Evaluation
 site_url: https://fiware-marketplace.readthedocs.org
-repo_url: https://github.com/FIWARE-Ops/Marketplace
-site_description: FIWARE Marketplace documents
+repo_url: https://github.com/FIWARE-Ops/docs.marketplace-evaluation
+site_description: FIWARE Marketplace Evaluation
 docs_dir: docs
 site_dir: html
 use_directory_urls: false
