@@ -14,7 +14,7 @@
 <meta name="twitter:title" content="About
 The process for commercial software to apply as powered by FIWARE or FIWARE-Ready">
 <meta name="twitter:description" content="This documentation describes the process to apply and validate an IoT Device as FIWARE Ready.">
-<meta name="twitter:image" content="https://www.fiware.org/wp-content/uploads/FF_Banner_General.png">
+<meta name="twitter:image" content="https://www.fiware.org/wp-content/uploads/FF_Marketplace_GenericBanner.png">
 </div>
 
 The [FIWARE Marketplace](https://marketplace.fiware.org) serves the purpose of globally disseminating existing
