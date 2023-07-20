@@ -8,7 +8,7 @@
 <meta property="og:description" content="This documentation describes the process to apply and validate an IoT Device as FIWARE Ready.">
 <meta property="og:type" content="documentation">
 <meta property="og:url" content="https://fiware-marketplace.readthedocs.io/">
-<meta property="og:image" content="https://www.fiware.org/wp-content/uploads/FF_Banner_General.png">
+<meta property="og:image" content="https://www.fiware.org/wp-content/uploads/FF_Marketplace_GenericBanner.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@FIWARE">
 <meta name="twitter:title" content="About
