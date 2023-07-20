@@ -1,3 +1,8 @@
+# About the FIWARE Marketplace
+
+[![Documentation](https://nexus.lab.fiware.org/repository/raw/public/badges/chapters/documentation.svg)](https://fiware-marketplace.readthedocs.io)
+[![Support badge](https://nexus.lab.fiware.org/repository/raw/public/badges/stackoverflow/fiware.svg)](https://stackoverflow.com/questions/tagged/fiware)
+
 <div id="social-meta">
 <meta property="og:title" content="Guidelines for the process of validating entries in the FIWARE Marketplace">
 <meta property="og:description" content="This documentation describes the process to apply and validate an IoT Device as FIWARE Ready.">
@@ -11,12 +16,6 @@ The process for commercial software to apply as powered by FIWARE or FIWARE-Read
 <meta name="twitter:description" content="This documentation describes the process to apply and validate an IoT Device as FIWARE Ready.">
 <meta name="twitter:image" content="https://www.fiware.org/wp-content/uploads/FF_Banner_General.png">
 </div>
-
-
-[![Documentation](https://nexus.lab.fiware.org/repository/raw/public/badges/chapters/documentation.svg)](https://fiware-marketplace.readthedocs.io)
-[![Support badge](https://nexus.lab.fiware.org/repository/raw/public/badges/stackoverflow/fiware.svg)](https://stackoverflow.com/questions/tagged/fiware)
-
-# About the FIWARE Marketplace
 
 The [FIWARE Marketplace](https://marketplace.fiware.org) serves the purpose of globally disseminating existing
 commercial offerings around FIWARE. It is a global one-stop shop that gives visibility to a wide range of Powered by
