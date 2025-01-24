@@ -53,23 +53,32 @@ to be registered under each categories varies accordingly - check the details in
     around management of context data through a context broker using FIWARE NGSI as core integration API. They may
     gather context data from quite heterogeneous sources and perform processing and visualization of context data to
     bring support to the smart automation of certain process and/or the adoption of smart decisions by end users.
+
 -   [_"Powered by FIWARE"_ Platform](platform/apply.md) - A software platform integrating a set of FIWARE components,
     and potentially other platform components, that brings support to the development and runtime execution of “Powered
     by FIWARE” solutions. A FIWARE-compliant Context Broker is the core component of any _“Powered by FIWARE”_ platform
     and FIWARE NGSI its core integration API. They can be provided from public/private clouds or at the premises of the
     platform users.
 
+-  _"Cities4Cities"_ Platform/Solution - Public institutions who have
+    created their own off-the-shelf Smart City platform which has been assessed as _"Powered by FIWARE"_ shall be placed into the Cities4Cities category if the applicate offers their software to other
+    cities and territories ready for reuse. The assesment process is the
+    same as above.
+
 -   [_"FIWARE-Ready"_ IoT Device](device/apply.md) - a concrete IoT device which is able to send and respond to messages
     using FIWARE NGSI, either natively or indirectly via the use of an IoT Agent which can translate the native IoT
     message format and transport protocol, proprietary or not, supported by the device.
--   [_"FIWARE-Ready"_ Solution](enabler/apply.md) - A software system whose architecture is not _“Powered by FIWARE”_
+
+-   [_"FIWARE-Ready"_ Enabler](enabler/apply.md) - A software system whose architecture is not _“Powered by FIWARE”_
     but is able to exchange messages with a _“Powered by FIWARE”_ solution/platform using FIWARE NGSI. They may be full
     end-to-end solutions which can be integrated as part of a larger _“Powered by FIWARE”_ solution following a “system
     of systems” approach. They may also be base software platform components or enablers which can be integrated as part
     of a _“Powered by FIWARE”_ platform to extend its capabilities. _“FIWARE-ready”_ solutions don’t need to be open
     source.
+
 -   [FIWARE Consulting, Integration and Technical Support Services](consulting/apply.md) - Technical support services
     for deploying and maintaining FIWARE solutions in the field offered by a given company or consortium of companies.
+
 -   [FIWARE Training and Coaching Service](training/apply.md) - Training and coaching services on how to use FIWARE
     offered by a given company or consortium of companies.
 
