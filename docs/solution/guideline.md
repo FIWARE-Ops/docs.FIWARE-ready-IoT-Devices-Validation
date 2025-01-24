@@ -21,7 +21,7 @@ insights, predictions or other advanced analytics.. Further information for deve
 [fiware.org](https://www.fiware.org/developers). Similarly, a catalogue of and **open-source FIWARE** standard
 components can be found on [GitHub](https://github.com/FIWARE/catalogue). Furthermore a list of FIWARE compatible
 **commercial solutions** (such as _FIWARE-Ready_ devices and enablers) can be found within the
-[FIWARE Marketplace](https://marketplace.fiware.org)
+[FIWARE Showcase](https://www.fiware.org/showcase)
 
 An example of a smart solution, would be one intended to optimize waste collection service in a city. The service would
 gather context data (filling levels) from IoT devices attached to waste containers. IoT Devices will send measurements

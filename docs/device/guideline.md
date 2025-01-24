@@ -92,9 +92,9 @@ describe in details how to connect the device to Orion Context Broker to send co
 questions regarding the information in this template, you are welcome to contact the _"FIWARE-Ready"_ IoT Devices
 Program reviewers [IoTReady@lists.fiware.org​](mailto:I​oTReady@lists.fiware.org​).
 
-<h3>Fill in the information of your product into the marketplace</h3>
+<h3>Fill in the information of your product into the showcase</h3>
 
-You can go to the marketplace and select [Apply](https://www.fiware.org/marketplace/submit-your-product) to upload a new component to be
+You can go to the showcase and select [Apply](https://www.fiware.org/showcase/submit-your-product) to upload a new component to be
 validated. It goes to the ​ web page in which you can select **Start a new application**.
 
 ![](../img/02.png)
@@ -123,10 +123,10 @@ Once that you finish with the process to introduce the data, you can submit the 
 ![](../img/04.png)
 
 _"FIWARE-Ready"_ IoT Device Program reviewers will evaluate the provided documentation and contact with you in case any
-clarification is required. The result of this evaluation will be a Test Report that will be published in the marketplace
+clarification is required. The result of this evaluation will be a Test Report that will be published in the showcase
 application page. Once the evaluation is finished, you have successfully completed the _"FIWARE-Ready"_ IoT Device
 Program, and your device will be published on the list of _"FIWARE-Ready"_ IoT Devices commercial devices available in
-the **FIWARE Marketplace** :`https://marketplace.fiware.org/pages/devices`. Once the product is validated you will also
+the **FIWARE Showcase** :`https://marketplace.fiware.org/pages/devices`. Once the product is validated you will also
 be able to publish in your own web the program logo and specific instructions to connect your product to FIWARE
 ecosystems (based on a template we will provide as well).
 
@@ -146,4 +146,4 @@ In order to proceed with the validation of a FIWARE-Ready IoT device validators 
 Infrastructure should provide a possibility to check the connectivity with IoT Agents and message brokers. All endpoints
 can be proxied by NGINX, since its log contains enough information about all TCP and HTTP connections. Sample
 docker-compose file with a part of the required infrastructure, as well as instructions and variables for Postman
-recipes prepared for applicants' guidelines are located at `https://github.com/FIWARE-Ops/Marketplace/tree/validators`.
+recipes prepared for applicants' guidelines are located at `https://github.com/fiware-ops/docs.marketplace-evaluation/tree/validators`.

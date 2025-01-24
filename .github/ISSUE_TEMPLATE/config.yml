@@ -1,9 +1,9 @@
 blank_issues_enabled: true
 contact_links:
-  - name: FIWARE Marketplace
+  - name: FIWARE Showcase
     url: https://marketplace.fiware.org/
     about: |
-      The FIWARE Marketplace serves the purpose of globally disseminating existing commercial offerings around FIWARE. It is a global one-stop 
+      The FIWARE Showcase serves the purpose of globally disseminating existing commercial offerings around FIWARE. It is a global one-stop 
       shop that gives visibility to a wide range of Powered by FIWARE solutions/platforms, FIWARE-ready technologies as well as FIWARE related 
       training/coaching or consultancy, integration and support services.
   - name: Application Process Documentation

@@ -8,7 +8,7 @@
 4.  Fill in the
     [_"FIWARE-ready"_ IoT Device Manual Template](https://docs.google.com/document/d/1Ur9JG2rzSsImVJpmz05aXXv2exRvmCvGgRo869mjWaw/edit?usp=sharing)
     with the information about how to use your component within FIWARE ecosystem.
-5.  Go to `https://www.fiware.org/marketplace/submit-your-product`. Register, and then apply by providing all your company information.
+5.  Go to `https://www.fiware.org/showcase/submit-your-product`. Register, and then apply by providing all your company information.
     Then, under the **solution/service** section, choose **FIWARE-ready IoT Device** under **category** and a proper
     domain of application.
 6.  You may be asked to provide extra information or to have an interview with _"FIWARE-ready"_ IoT Device reviewers who
@@ -18,6 +18,6 @@
     perform themselves the tests.
 
 In the event that your application is correct and satisfies all the requirements, congratulations you are now part of
-the FIWARE Marketplace! The product will be updated to the _"FIWARE-ready"_ IoT Devices list of commercially available
+the FIWARE Showcase! The product will be updated to the _"FIWARE-ready"_ IoT Devices list of commercially available
 products. As a result of the validation process, an official document signed by FIWARE will acredite the result of this
 process together with a document with the results obtained during the process

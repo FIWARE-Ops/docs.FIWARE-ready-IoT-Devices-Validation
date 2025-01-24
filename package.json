@@ -13,7 +13,7 @@
 	"license": "CC-BY-4.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/fiware-ops/Marketplace"
+		"url": "https://github.com/fiware-ops/docs.marketplace-evaluation"
 	},
 	"homepage": "https://fiware-marketplace.readthedocs.io/",
 	"devDependencies": {

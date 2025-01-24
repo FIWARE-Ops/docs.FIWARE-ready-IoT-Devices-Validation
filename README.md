@@ -1,11 +1,11 @@
-# Ready IoT Device Validation<img src="https://fiware.github.io//catalogue/img/fiware-black.png" width="145" align="left"> 
+# Ready IoT Device Validation<img src="https://fiware.github.io//catalogue/img/fiware-black.png" width="145" align="left">
 
 [![Documentation](https://nexus.lab.fiware.org/repository/raw/public/badges/chapters/documentation.svg)](https://fiware-marketplace.readthedocs.io)
 [![License: CC-BY-4.0](https://img.shields.io/github/license/FIWARE-Ops/docs.FIWARE-ready-IoT-Devices-Validation.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![fiware](https://nexus.lab.fiware.org/repository/raw/public/badges/stackoverflow/fiware.svg)](https://stackoverflow.com/questions/tagged/fiware)
 <br/>
 [![Documentation](https://img.shields.io/readthedocs/fiware-marketplace.svg)](https://fiware-marketplace.readthedocs.io)
-[![CI](https://github.com/FIWARE-Ops/Marketplace/workflows/CI/badge.svg)](https://github.com/FIWARE-Ops/Marketplace/actions?query=workflow%3ACI)
+[![CI](https://github.com/fiware-ops/docs.marketplace-evaluation/workflows/CI/badge.svg)](https://github.com/fiware-ops/docs.marketplace-evaluation/actions?query=workflow%3ACI)
 
 This documentation describes the process to apply and validate an IoT Device as FIWARE Ready.
 
@@ -23,9 +23,9 @@ This validation process is an auto-evaluation process but it is assisted by _"FI
 [IoTReady@lists.fiware.org](mailto:IoTReady@lists.fiware.org), who will review your tests logs and evaluate whether your
 device is connecting with the public instance correctly. Once you have successfully completed the _"FIWARE-Ready"_ IoT
 device program, your device will be published on the _"FIWARE-Ready"_ IoT devices section of the
-[FIWARE Marketplace](https://marketplace.fiware.org/pages/devices).
+[FIWARE Showcase](https://www.fiware.org/showcase/fiware-ready/).
 
- |  <img src="https://fiware.github.io/catalogue/img/fiware-emoji.png" height="20px" width="20px"/><br/> [marketplace.&ZeroWidthSpace;fiware.org](https://marketplace.fiware.org/) | :books: <br/>[Documentation](https://fiware-marketplace.readthedocs.io) |
+ |  <img src="https://fiware.github.io/catalogue/img/fiware-emoji.png" height="20px" width="20px"/><br/> [marketplace.&ZeroWidthSpace;fiware.org](https://www.fiware.org/showcase) | :books: <br/>[Documentation](https://fiware-marketplace.readthedocs.io) |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
 
 
@@ -46,9 +46,9 @@ of _"FIWARE-Ready"_ IoT devices provides the answer, as it is designed to demons
 to seamless interoperate with FIWARE platforms.
 
 The database of products and developers that have successfully been featured and certified as _"FIWARE-Ready"_ IoT
-devices will be part of the [FIWARE Marketplace](https://marketplace.fiware.org/pages/devices), a global one-stop shop
+devices will be part of the [FIWARE Showcase](https://www.fiware.org/showcase/fiware-ready/), a global one-stop shop
 that gives visibility to a wide range of _"Powered by FIWARE"_ solutions and platforms, _"FIWARE-Ready"_ technologies as
-well as FIWARE related training/coaching or consultancy, integration and support services. The **FIWARE Marketplace**
+well as FIWARE related training/coaching or consultancy, integration and support services. The **FIWARE Showcase**
 serves the purpose of globally disseminating existing commercial offerings across the FIWARE ecosystem.
 
 ## License

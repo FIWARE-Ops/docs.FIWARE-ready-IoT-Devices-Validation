@@ -1,10 +1,10 @@
-# About the FIWARE Marketplace
+# About the FIWARE Showcase
 
 [![Documentation](https://nexus.lab.fiware.org/repository/raw/public/badges/chapters/documentation.svg)](https://fiware-marketplace.readthedocs.io)
 [![Support badge](https://nexus.lab.fiware.org/repository/raw/public/badges/stackoverflow/fiware.svg)](https://stackoverflow.com/questions/tagged/fiware)
 
 <div id="social-meta">
-<meta property="og:title" content="Guidelines for the process of validating entries in the FIWARE Marketplace">
+<meta property="og:title" content="Guidelines for the process of validating entries in the FIWARE Showcase">
 <meta property="og:description" content="This documentation describes the process to apply and validate an IoT Device as FIWARE Ready.">
 <meta property="og:type" content="documentation">
 <meta property="og:url" content="https://fiware-marketplace.readthedocs.io/">
@@ -17,11 +17,11 @@ The process for commercial software to apply as powered by FIWARE or FIWARE-Read
 <meta name="twitter:image" content="https://www.fiware.org/wp-content/uploads/FF_Marketplace_GenericBanner.png">
 </div>
 
-The [FIWARE Marketplace](https://marketplace.fiware.org) serves the purpose of globally disseminating existing
+The [FIWARE Showcase](https://www.fiware.org/showcase/) serves the purpose of globally disseminating existing
 commercial offerings around FIWARE. It is a global one-stop shop that gives visibility to a wide range of Powered by
 FIWARE solutions/platforms, FIWARE-ready solutions and IoT devices as well as FIWARE related training/coaching or
-consultancy, integration and support services. Entries in the FIWARE Marketplace have been validated by the FIWARE
-Foundation or FIWARE iHubs which meet the requirements for performing validation of FIWARE Marketplace entries.
+consultancy, integration and support services. Entries in the FIWARE Showcase have been validated by the FIWARE
+Foundation or FIWARE iHubs which meet the requirements for performing validation of FIWARE Showcase entries.
 
 #### Powered by FIWARE
 
@@ -44,9 +44,9 @@ In summary, the ability for an IoT device to be _"FIWARE-Ready"_ can be supplied
 the device or **indirectly** - via the use of intermediate services such as an IoT Agent which can be used to translate
 proprietary message formats and transport protocols to NGSI.
 
-#### Marketplace Categories
+#### Showcase Categories
 
-Currently entries within the marketplace are classified into six separate categories. The criteria for a given offering
+Currently entries within the FIWARE Showcase are classified into six separate categories. The criteria for a given offering
 to be registered under each categories varies accordingly - check the details in the subsections below.
 
 -   [_"Powered by FIWARE"_ Solution](solution/apply.md) - a full end-to-end solution whose architecture gravitates

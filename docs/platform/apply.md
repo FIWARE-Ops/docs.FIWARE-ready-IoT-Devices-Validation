@@ -16,7 +16,7 @@ _"Powered by FIWARE"_ Platform or not. So please read carefully the description 
 > It is probable that you will not be successful applying as a _"Powered by FIWARE"_ Platform. If you are not sure, you
 > can always ask for help so that FIWARE experts can give you some advice.
 
-1.  Go to `https://www.fiware.org/marketplace/submit-your-product`, fill out the registration form, then, edit the “Solution/Service
+1.  Go to `https://www.fiware.org/showcase/submit-your-product`, fill out the registration form, then, edit the “Solution/Service
     information” and Select the category **Powered by FIWARE - Platform**.
 
 2.  Fill up the rest of fields providing as much information as possible so that evaluators can revise and, if suitable,
@@ -42,4 +42,4 @@ _"Powered by FIWARE"_ Platform or not. So please read carefully the description 
     scheduled at the same time as the demo in order that they can make an informed decision.
 
 7.  In the event that your platform and satisfies all the requirements, congratulations your Platform will be added to
-    the FIWARE marketplace.
+    the FIWARE Showcase.
