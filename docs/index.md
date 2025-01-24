@@ -61,7 +61,7 @@ to be registered under each categories varies accordingly - check the details in
     platform users.
 
 -  **_"Cities4Cities"_ Platform/Solution** - Public institutions who have
-    created their own off-the-shelf Smart City platform which has been assessed as _"Powered by FIWARE"_ shall be placed into the Cities4Cities category if the applicate offers their software to other
+    created their own off-the-shelf Smart City platform which has been assessed as _"Powered by FIWARE"_ shall be placed into the Cities4Cities category if the applicant offers their software to other
     cities and territories ready for reuse. The assesment process is the
     same as above.
 
